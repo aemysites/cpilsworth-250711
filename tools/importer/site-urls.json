@@ -1,0 +1,86 @@
+{
+  "originUrl": "https://www.wknd-trendsetters.site",
+  "lastCrawled": "https://www.wknd-trendsetters.site/",
+  "urls": [
+    {
+      "url": "https://www.wknd-trendsetters.site/",
+      "source": "SITEMAPS",
+      "targetPath": "/",
+      "id": "1b9ba84f36ee3a519917302a79dfd970725bae31"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/blog/fashion-blog-post",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/fashion-blog-post",
+      "id": "9b4d89f80efba6f8dbcb1e3da8ea8ffa8771a959"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/blog/fashion-trends-young-culture",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/fashion-trends-young-culture",
+      "id": "f5bdda3762c99b21ef3c8f0ca75cb53a00b4e8bf"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/blog/fashion-trends-young-style",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/fashion-trends-young-style",
+      "id": "be00f351b0490d8b536bf724216d6530c30d5684"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/blog/latest-trends-young-casual-fashion",
+      "source": "SITEMAPS",
+      "targetPath": "/blog/latest-trends-young-casual-fashion",
+      "id": "971148fccf483ccd07f6ef722bc01c7fb46f61d5"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/faq",
+      "source": "SITEMAPS",
+      "targetPath": "/faq",
+      "id": "429d6f000c5a6e38a121160bf56d01b17365cffe"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/fashion-insights",
+      "source": "SITEMAPS",
+      "targetPath": "/fashion-insights",
+      "id": "67430c465ff7767e6ae98a0cffa44cd32754a351"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/fashion-trends-of-the-season",
+      "source": "SITEMAPS",
+      "targetPath": "/fashion-trends-of-the-season",
+      "id": "1cfeb2756419a8f56a89a355f5557c3321845adb"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/fashion-trends-young-adults",
+      "source": "SITEMAPS",
+      "targetPath": "/fashion-trends-young-adults",
+      "id": "d2dd722de7842a6232ce56b1307d383ff72c9358"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/fashion-trends-young-adults-casual-sport",
+      "source": "SITEMAPS",
+      "targetPath": "/fashion-trends-young-adults-casual-sport",
+      "id": "1a14744466075b2d00884f27fb69e2633b6fcb84"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/latest-trends-young-fashion",
+      "source": "SITEMAPS",
+      "targetPath": "/latest-trends-young-fashion",
+      "id": "f5e200536a2c91b06effaf661df0675e13f262b6"
+    }
+  ],
+  "crawlOptions": {
+    "timeout": 64800000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": -1,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "sitemaps",
+    "logger": {},
+    "strategiesAttempted": [
+      "SITEMAPS"
+    ]
+  },
+  "extractionErrors": []
+}
