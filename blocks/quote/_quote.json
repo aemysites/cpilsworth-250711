@@ -1,0 +1,47 @@
+{
+  "definitions": [
+    {
+      "title": "Quote",
+      "id": "quote",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Quote",
+              "model": "quote"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "quote",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "classes",
+          "label": "Style"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "quotation",
+          "value": "",
+          "label": "Quotation"
+        },
+        {
+          "component": "richtext",
+          "name": "attribution",
+          "value": "",
+          "label": "Attribution",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
