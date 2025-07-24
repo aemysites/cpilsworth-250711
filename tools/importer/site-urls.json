@@ -1,0 +1,1717 @@
+{
+  "originUrl": "https://www.virginatlanticcargo.com",
+  "lastCrawled": "https://www.virginatlanticcargo.com/",
+  "urls": [
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en",
+      "id": "6baf5d09a29eb108a2ee626d4a7eb5428732edfa"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/accreditations.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/accreditations",
+      "id": "271f8ba3361649ae2e0d2d762309ea8ae99af82f"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/global-survey.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/global-survey",
+      "id": "c713b97fdfe543c04964f2399f336d386f759da9"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news",
+      "id": "6dbdd75bf280914c320a2c44906e8c209cb65949"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Covid-19.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/covid-19",
+      "id": "a2d901f4ee9d43d66871e60ef13a50b4e2b5cf9d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/hkg-syd.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/hkg-syd",
+      "id": "e826db01167b1e66c3bc22de0edb595e07419dec"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/lhr-jnb.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/lhr-jnb",
+      "id": "4e1f00b0fe0a57d7946ea1eff5e99e3c83c82924"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/meet-the-team.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/meet-the-team",
+      "id": "12dc17b4e6423656f9f9fd5bb51d6cea7d364706"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/our-media-team.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/our-media-team",
+      "id": "234bca5aa74efa013876811028f820c2c2e03709"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases",
+      "id": "d0845bc5b09e5e7f33402f3886dc12d5e62a236d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/bfac-sa-partnership-the-catch-trust.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/bfac-sa-partnership-the-catch-trust",
+      "id": "d04c73a9e3d8580cf7f75ac2c34fd80c93cae44a"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/billund-airport.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/billund-airport",
+      "id": "6394800ea40e03b9880bb901e5f2afd86576dad5"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/cargo-one-partnership.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/cargo-one-partnership",
+      "id": "e30074237fa07a6c8cfd9e65a0aa758556f4cb31"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/mark-faulkner-appointment.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/mark-faulkner-appointment",
+      "id": "696b139fb2b1c972ae5cbbecebc9b896473b2a54"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/nick-diesel-appointment.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/nick-diesel-appointment",
+      "id": "fe954b027721a600cb946d51c8b6339f621b130d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/phil-wardlaw-appointment.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/phil-wardlaw-appointment",
+      "id": "f132749f3be1a5961f94afbba677ddc155903c2e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/phill-wardlaw-appointment.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/phill-wardlaw-appointment",
+      "id": "c502ac8110561e906bc4ea2e68f16a1535506fb0"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/SAF-Programme.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/saf-programme",
+      "id": "0044d55088feb38541a98d3cc5ef8dded0c31f41"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/supporting-pakistan-humanitarian-crisis.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/supporting-pakistan-humanitarian-crisis",
+      "id": "dad394b1068d348646b853042cd7ff458d28d4c7"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/vac-introduces-myvs.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/vac-introduces-myvs",
+      "id": "667706b1ad4343c849e4ea626c4505611deab69b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/virgin-atlantic-cargo-adds-releye--containers-.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/virgin-atlantic-cargo-adds-releye-containers",
+      "id": "8a409a9753fdb8def07b83da5c75b3b5f11471af"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/virgin-atlantic-cargo-appoints-ecs-group.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/virgin-atlantic-cargo-appoints-ecs-group",
+      "id": "d2d20815e2cfc5baaac3366d87158ad6a75dab6b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/virgin-atlantic-cargo-selects-accelya-to-power-transformation.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/news/press-releases/virgin-atlantic-cargo-selects-accelya-to-power-transformation",
+      "id": "eb547857be7dd9aac2559ff38dd238eca2160943"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/our-awards.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/our-awards",
+      "id": "4ef497394275d402a7c0cd247b035125962d43da"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/our-fleet.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/our-fleet",
+      "id": "f6b759b16ae7efde9a8d423c17729e463ac4d7da"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us/our-story.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/about-us/our-story",
+      "id": "507449d64fa3bba7a6d811e642a116ef28526adb"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book",
+      "id": "604cf42324975a2e3691e5b6e4a5c83af3c3b405"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/contact-us.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/contact-us",
+      "id": "2037a65d801d3f3ceb8ff7a6bb35488c3d34f7f7"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/permanent-bookings.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/permanent-bookings",
+      "id": "f477fb9c6a4b91aad98ec2e3d87b5fa6b5ed4df8"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/pets2.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/pets2",
+      "id": "a4e8f4dbf4f194e291756329ee75097af33c9250"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/promo_rates.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/promo-rates",
+      "id": "4e20e7896b307ed68b073e75c0d3f40466835786"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/quick-quote.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/quick-quote",
+      "id": "6e559034f96d52eb8291ce6e0898ea6899f815bf"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesABZ.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratesabz",
+      "id": "12f0168c0793bf556beb0da27b69be51d5e8cd28"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesATL.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratesatl",
+      "id": "002c0200d060f9d319ffc176537aeb92b61fca74"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesBFS.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratesbfs",
+      "id": "5feaddb32721e175ac67fa4888b6408d130c812a"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesBOS.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratesbos",
+      "id": "6fb8b53a86676f927dafe77876659ac9fb292496"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesGLA.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratesgla",
+      "id": "ff95559fdf05c337b3d2c262ca1f3fd5415df784"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesIAD.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratesiad",
+      "id": "1f446597049b3669813ec4a3fd76d82b01cbfc2c"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesLAX.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotrateslax",
+      "id": "7e3e39657a021fd914b55dffd6a5803c435b3feb"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesMAN.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratesman",
+      "id": "f220d956cbc0d1c054d4fea903c3152ba61179be"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesMIA.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratesmia",
+      "id": "f709782fed619c7a0c6756b065717ae0925f4c26"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesNYC.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratesnyc",
+      "id": "a80514af983f782a6a563e224093fa993c0cbd27"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesORD.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratesord",
+      "id": "5e2381c59a8c365445e03043b16d2bfe43ebb74d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesSEA.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratessea",
+      "id": "85ce5c11ee7fb0ecea7bde35c7c450b72c5ad51a"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesSFO.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/redhotratessfo",
+      "id": "c265e187e2657f81945b2b3dc3f2b691c3152290"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/test.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/test",
+      "id": "2e2c47c1ef59403f178f7fd3cdd6b31a0b0354b6"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/test1.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/test1",
+      "id": "998d34b15f1274ea2f13fbabefa151b744564033"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/test11.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/test11",
+      "id": "5e0daa4714d3713b337e7509e7bdca6051aefc01"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/UK_promo_rates.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/uk-promo-rates",
+      "id": "83032d55956a68e6fac90ae2df557790514c0a63"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/ukchristmasnewsletter.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/book/ukchristmasnewsletter",
+      "id": "4ed831d1890c7c9319067b9071a80bda87441c33"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/businessupdates.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/businessupdates",
+      "id": "fe75bea97f74096e9e63cf383b202ed66557ce92"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/cargoform.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/cargoform",
+      "id": "ce64c65c32c461cf38391e9a0f40d29832f0fb55"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/awb-confirm-cargo.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/cargoform/awb-confirm-cargo",
+      "id": "b33e4af4d1bb31b14f87c2896ac2d37cc87dc30f"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/awb.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/cargoform/awb",
+      "id": "53df19da90296e10144a3fb5fb8687c16f3123fb"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/cargo-system-incident-log.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/cargoform/cargo-system-incident-log",
+      "id": "3906d540de85eab700f0975c8f690f13b07f68e2"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/eawbregistrationform.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/cargoform/eawbregistrationform",
+      "id": "fdda3e61d505260c9a417898e7bc6abdce3469a1"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/registration-confirm-cargo.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/cargoform/registration-confirm-cargo",
+      "id": "f47a6d03b5ad53e0f2664cc46efc153bcee49788"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/system-incident-cargo-confirm.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/cargoform/system-incident-cargo-confirm",
+      "id": "6ff3c39ec1b92f60337b9d349919c5e0b7d33038"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/contact-us.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/contact-us",
+      "id": "dc73b9e0955c1f94b27415223d8c9c1e23d169fc"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/christmas-information.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/contact-us/christmas-information",
+      "id": "b1a90784e57635fa738a1a22f1dd87563b2a3657"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/faqs.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/contact-us/faqs",
+      "id": "dda5f60c05995e5a1b5cc853926a8f4b3bcc641d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/faqs/EU-GSSA-Transition.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/contact-us/faqs/eu-gssa-transition",
+      "id": "7e0e00c04c0459d42368531adcb627f70d224b1a"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/make-a-claim.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/contact-us/make-a-claim",
+      "id": "41110ff50f5b304f8de6558eb076ce5b57bbccf4"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/open-account.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/contact-us/open-account",
+      "id": "60786aa0c1a15641fbf840b2a3be567e70831f7e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/request-mawb.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/contact-us/request-mawb",
+      "id": "162b3a750f14d6d9f3df09224d8e6699ab529ecd"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/seasonal-opening-hours.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/contact-us/seasonal-opening-hours",
+      "id": "502ecc57d58db22cd5e681d637b5895ba00e912d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/test.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/contact-us/test",
+      "id": "2016d9386a0b6d0d45f28c4bff44ba01102c1401"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/US-Tariffs.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/contact-us/us-tariffs",
+      "id": "2915be7a93d53611014fa7d840e528ff7a4a70fd"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/eservices.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/eservices",
+      "id": "099da10a40ae3e70c6e3445c7c33d07763cb61c1"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/eservices/myvs-training.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/eservices/myvs-training",
+      "id": "87c95c7065f1b8e91725a2109e072658d6f4dac1"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/events.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/events",
+      "id": "97e47d80b0247537487f5a3d1a843609d32e31c1"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/Footer.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/footer",
+      "id": "170fe0e40aa28bcd34f0e6f5e637d7fb824d2395"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/Footer/accessibility.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/footer/accessibility",
+      "id": "266b1cddd9c6769e71ca54c6e374c929ce44d235"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/Footer/cookie-statement.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/footer/cookie-statement",
+      "id": "a10fa535192f4607469e878187fd7e746da2341d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/Footer/termsandconditions.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/footer/termsandconditions",
+      "id": "b71ce5bc4c326b71290778e80b56b0af21757849"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/Footer/termsandconditions/product-service-level-terms.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/footer/termsandconditions/product-service-level-terms",
+      "id": "534a3d0c482739addd679cd06846f5082985558e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/header-footer.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/header-footer",
+      "id": "b70f652e2190fc04bbb43f2c2dc6d65ce46f7891"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/header-footer/headerpanels",
+      "id": "7d4fc2909d3785722c828eb37bdeb6e124170de7"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/aboutus.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/header-footer/headerpanels/aboutus",
+      "id": "07729e169df90d6b44539787361e856e66ceaa1b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/book.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/header-footer/headerpanels/book",
+      "id": "c90293721589992c37f2b712fe231473c4d8fc6c"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/contactus.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/header-footer/headerpanels/contactus",
+      "id": "32c50d8b6ac43e4da4e40033f949e7f422389631"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/eservices.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/header-footer/headerpanels/eservices",
+      "id": "16fbac387361d507d3e8a9ae6e08c23c4df404a2"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/ournetworklinks.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/header-footer/headerpanels/ournetworklinks",
+      "id": "17aae27b9d26324fcd767dc1e2746bc1855bf3d0"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/ourserviceslinks.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/header-footer/headerpanels/ourserviceslinks",
+      "id": "9762a9a501f21256752357630009a0e2d8391bde"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/track.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/header-footer/headerpanels/track",
+      "id": "792d5da655cf7ac83e70dbe0f639447efc39ddec"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/industry-solutions",
+      "id": "a8bbe09168426a93d97c6ea3d58daabbd1193242"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/Industry-Solutions.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/industry-solutions",
+      "id": "48e3ce95db6558e6762f53142e970fe10f500703"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/aerospace.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/industry-solutions/aerospace",
+      "id": "630b920ec56e74e5100b12e5e4ad8d38b1903ede"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/agriculture.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/industry-solutions/agriculture",
+      "id": "6b52248b1d9805a6b543fc91f23da74d26bff023"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/automotive.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/industry-solutions/automotive",
+      "id": "ac6c451edb8704e03a7bf87d96b9efdeb47be64a"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/dangerous-goods.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/industry-solutions/dangerous-goods",
+      "id": "0cc51fab01a7203496eb389b6ed4846fff68cb57"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/e-commerce.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/industry-solutions/e-commerce",
+      "id": "df8bdfe3166a11c5b77ea3f258d232fc82ef8ab7"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/fine-art.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/industry-solutions/fine-art",
+      "id": "0374b3efa88eb85601875b21535a62fe05986b35"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/healthcare.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/industry-solutions/healthcare",
+      "id": "1dd90ff86bc96d61be4f78032bc8a1bd811b784a"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news",
+      "id": "5da9a7ef86229b127db0573899070138a3cd59af"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/ACAS-operational-update.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/acas-operational-update",
+      "id": "c2005050f6a4faf013b3853df939572c89fcfeb6"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/bat-for-a-chance-pakistan.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/bat-for-a-chance-pakistan",
+      "id": "6c44775b42960ad6b2165fe01c56b22dc43c8f96"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/bat-for-a-chance.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/bat-for-a-chance",
+      "id": "9ce991093a376783508689d0023dd5938444b709"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/brussels-500th-cargo-flight.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/brussels-500th-cargo-flight",
+      "id": "d119b48ffa28a1a2eb8ca52f304ba0ab0812bd30"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/everything-you-need-to-know-ICS2.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/everything-you-need-to-know-ics2",
+      "id": "583341e4a4b6344c3ffb70391374826b74a29563"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/HS_Codes_for_UAE_Shipments.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/hs-codes-for-uae-shipments",
+      "id": "bf37c89f8575517a687439915ab25048cc859c9f"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/ics2.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/ics2",
+      "id": "dc888c5d46cd9d4229d6e1b7a0c56fa8272712f0"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/inspirational-women-of-virgin-atlantic-cargo.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/inspirational-women-of-virgin-atlantic-cargo",
+      "id": "63405ef7c1408fff7bd43cbd9b6e9c604ebb7dbb"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/cat-van-straaten.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/cat-van-straaten",
+      "id": "8157b9ec89ab1c7bdacfa150abe375073e9fd140"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/daniellie-edri.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/daniellie-edri",
+      "id": "34028ad0fe4d39e1cf87c731f28cba6b86a6eb6b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/holly-best.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/holly-best",
+      "id": "4b8e5d6731224d22592606040f370a4cdfe8b1bc"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/jo-holmes.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/jo-holmes",
+      "id": "179a4996cea20ae0d42b14c81229f2a2c965dfb1"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/laura-roher.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/laura-roher",
+      "id": "a651c3fb453d88c9a66a6ff1119e5e5d9ee204d1"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/laurn-baldwin.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/inspirational-women-of-virgin-atlantic-cargo/laurn-baldwin",
+      "id": "ea8cf345584279bd93dc1a7155d44f0e02b9669e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/interview-carla-burgos.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/interview-carla-burgos",
+      "id": "e4e42378e73900368903855e4d4aad45b135492e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/interview-kirk-murray.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/interview-kirk-murray",
+      "id": "d51cd530daebbfc7a8e4419898560fd255263ea9"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/Introducing-EB-Butt.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/introducing-eb-butt",
+      "id": "427fac7630c973ba93fc23d8f857605baa84b8b0"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/introducing-myvs.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/introducing-myvs",
+      "id": "3e9e804d684c7900ef45cc178007fc0058ab7bd7"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/Introducing-Zach-Greene.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/introducing-zach-greene",
+      "id": "e7908fbba75b41cfd117f6172179599fce43c1b5"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/IWD2025.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/iwd2025",
+      "id": "5b7bebc3e06d50bcd8cf6b5b54c338347b8f01d5"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/Live_on_WebCargo.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/live-on-webcargo",
+      "id": "0c9104f965197f914a732a0b3ce13e9a0f0d3b4d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/New_South_Africa_GHA.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/new-south-africa-gha",
+      "id": "bd9907904cccbc95a578c4753f5f217ff897cbda"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/New-cooler-facility-JFK.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/new-cooler-facility-jfk",
+      "id": "15da1737b3c83489769fbb5e72c7835cc6959b8a"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/new-destinations-jun22.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/new-destinations-jun22",
+      "id": "69efe3ad6e77c3eea9f12a85135a981102f48104"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/new-route-incheon.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/new-route-incheon",
+      "id": "d3b47bc87eed9a5e712464c5fb4dba9c74334e8f"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/new-service-lhr-ord.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/new-service-lhr-ord",
+      "id": "7f5454fe8404775d873d76886308f7ecce42b84c"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/new-winter-22-routes.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/new-winter-22-routes",
+      "id": "6bc963397374941297882c0ba3ea6de279f58973"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/Service-Disruption.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/service-disruption",
+      "id": "9cb1dc55623965460282cfef313b2183de0c77d2"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/Summer-Schedule-2024.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/summer-schedule-2024",
+      "id": "51f05f5290093e10c28769ff221fb78599ccced3"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/Taking_off_with_cargo_one.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/taking-off-with-cargo-one",
+      "id": "4343c9c411f15f721746743b86899ea258a843b6"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/TSA-Security-Requirement.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/tsa-security-requirement",
+      "id": "b3141243cc21dfaa44051c13777238824529b43a"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/news/UK-Border-Force-requirements-for-all-UK-destination-shipments.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/news/uk-border-force-requirements-for-all-uk-destination-shipments",
+      "id": "efbcfb18acdfe9859b3e5aefd05b466139142687"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/notifications.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/notifications",
+      "id": "e11a3facc2e5d87cc59ab67b003c8929d06680e8"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/notifications/lhr-airport-closure.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/notifications/lhr-airport-closure",
+      "id": "7cbc482c635a359718e0e37b4c7d73a52e160869"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule",
+      "id": "a9dc8136bd80abb3d7c66d60387af1c3fbcffc29"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/atl-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/atl-lhr",
+      "id": "29a6a88a77c5206226c97b4f1574dd0d572c1586"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/bgi-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/bgi-lhr",
+      "id": "27d4759b4ed364730ab4d3720d721a64c003d8d8"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/bom-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/bom-lhr",
+      "id": "3cad59c857151a6c798032ca70ed2c0387815c8b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/bos-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/bos-lhr",
+      "id": "a7239eb3a559291b596ac29bc0bede6591a6bfab"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/bru-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/bru-lhr",
+      "id": "22625b0e576493e707df674dca9e4f257ced4c4f"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/del-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/del-lhr",
+      "id": "42472b04024c5aa3c08b1f6a6996a66014d3366c"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/dub-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/dub-lhr",
+      "id": "a4ab6d4a34b7876b242b216e4277cf602b4ae80e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/hkg-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/hkg-lhr",
+      "id": "314f5a21e9bd5d58cb186d3c9d7a8b2e287ee570"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/isb-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/isb-lhr",
+      "id": "5db6ba799925d570bc56088a4fc860cccd86d01e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/jfk-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/jfk-lhr",
+      "id": "103de5b4db3c326426b1aa0534c416ae0cb7c76d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lax-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lax-lhr",
+      "id": "24c0d377ef8ce72495d055c973217d9976391b24"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhe-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhe-lhr",
+      "id": "13f2fe43e862fd2d38bae04d7df4aab16f1afd86"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-atl.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-atl",
+      "id": "5ccb21ee0e748c572b9f53a81a02c9ff579a1096"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-bgi.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-bgi",
+      "id": "bdf7ef4a02f91f5dd147cba9343d9cb5767db3eb"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-bom.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-bom",
+      "id": "9ca35da9129c6dafc1038c12542dedb9894980b8"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-bos.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-bos",
+      "id": "9c9b1b4deeb887492df49681261e9b0bcf109630"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-bru.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-bru",
+      "id": "e12debe27f02d6b6124a2d82189fd06c4ced879f"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-del.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-del",
+      "id": "ec3a4581aaf81c06c6ce414bdb092f3b4afba255"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-gnd.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-gnd",
+      "id": "b074e12775a5402c301767eeaf451b3964459850"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-hkg.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-hkg",
+      "id": "cc64c4401c963ef4aed41fb83386580a1397f1af"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-isb.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-isb",
+      "id": "77e7ed4cd7272092e0579136f9bfd13066df9532"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-jfk.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-jfk",
+      "id": "9a0919cb5fa0be1de960cbe52886a8b10f0ed6d9"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-lax.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-lax",
+      "id": "f91fa0b92ecc0a1e8cdd440c9202c7544d35c2e1"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-lhe.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-lhe",
+      "id": "ae021ed48072d74619e7702999ba5881b729216f"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-los.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-los",
+      "id": "ec060d7317445fbfe0b6ccbcae96331f3637aa5b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-mia.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-mia",
+      "id": "6db60e05cdc01a86bb86c633623cb30b94997b47"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-mxp.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-mxp",
+      "id": "052cb0667bf9b2b8525b0bd049a9a7081a4acf3f"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-ord.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-ord",
+      "id": "fdcef5f112fe27c98094dbe9bc74afa20c0ac9c4"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-pvg.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-pvg",
+      "id": "02648668056b1de3129a13d8aab6c91ac70df85c"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-sju.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-sju",
+      "id": "3d5e12b95c7bb769827668580af14c6acf430c15"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/lhr-tlv.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/lhr-tlv",
+      "id": "5a61ba0e996f0a273eb55c5cb1abc780f01e2ab9"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/man-bgi1.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/man-bgi1",
+      "id": "74b505be7aa7f9a2a2f57d1328f101ca3ba3bbf0"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/man-isb1.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/man-isb1",
+      "id": "58fa4f951d2c9d759223b703782053c5c54d6596"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/mia-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/mia-lhr",
+      "id": "7192ae0de59c12b95f2fcab8470c6da7355534f0"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/mxp-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/mxp-lhr",
+      "id": "39ae74b16330e465ea37fb9f326c798c1a88e040"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/ord-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/ord-lhr",
+      "id": "03a043c991e7f8489ee60454f1eb975414061137"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/pvg-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/pvg-lhr",
+      "id": "f9c101eeb4a73f7eb68b8576165d8091c6f3948b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/sju-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/sju-lhr",
+      "id": "8f22ec30edb382472272733bbfc2828ced73c63a"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule/tlv-lhr.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/flight-schedule/tlv-lhr",
+      "id": "0480dfe9ac9c01e460da564a8055c7ffa9a37fc4"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/global-onforwardings.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/global-onforwardings",
+      "id": "d848bc3c66b14db77f48892d884cde71b24996de"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/network-map.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/network-map",
+      "id": "3ef5f9025558608c8ca9cac22aa0c5a39fc263bf"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/ourdestinations.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/ourdestinations",
+      "id": "a905f22517705296f3e2f2ece01a901972932011"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/standalone-network-map.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/standalone-network-map",
+      "id": "840a12cf4760c47da7343d6354dfa13669b347d4"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices",
+      "id": "87f7256a600203dab761c8f97f465f013c2b8b31"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/aberdeen.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/aberdeen",
+      "id": "f86590def14c310a31f9392a056a1ddbbf8019a6"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/antigua.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/antigua",
+      "id": "667e59bee0de750f7da23893ddec1e9dd394d698"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/atlanta.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/atlanta",
+      "id": "f1de95e7ee69a7ae2229030a9878febbd2552139"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/austria.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/austria",
+      "id": "624beda7e651e1bda879c7a0227918ef5d2c4800"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/Bahamas.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/bahamas",
+      "id": "b4385f932d95a43fe8546d3264dd560b619b4afc"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/barbados.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/barbados",
+      "id": "d317af6f126e98ce8ce22fc78a09a7ba751e58f1"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/belfast.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/belfast",
+      "id": "5391efe5f0c711f5b525091d32c4b7f50c66abf9"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/bengaluru.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/bengaluru",
+      "id": "16c98da4b939bb563ecd6cf16e43a69dc002c3ad"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/birmingham.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/birmingham",
+      "id": "b5233ec7fa8dad90cf193aa9fd813fce765d0031"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/boston.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/boston",
+      "id": "4252b6cd3f0dde8d3358664fc57245828082e4bd"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/brussels.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/brussels",
+      "id": "ddb17173f4c2a0ecc3caaca3e62d7300b9874bf6"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/cancun.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/cancun",
+      "id": "933bd7f3f53ac82ad34d390187499ad46ebe7759"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/cape-town.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/cape-town",
+      "id": "148dab58bfea21e945611fd5962c7c71fd57b6c5"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/chicago.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/chicago",
+      "id": "09c0d10517034e0c43e6dde89f470072f61fcc8c"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/czech-republic.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/czech-republic",
+      "id": "c6bcd3e6e58d8b754ae0d47f75a8e7f69c36fc02"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/delhi.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/delhi",
+      "id": "312e0396eaa31a735aa551d40496cbda8f5c87cd"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/denmark.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/denmark",
+      "id": "c502cfea9d1616b33d14dfb7937b70ba58d04609"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/detroit.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/detroit",
+      "id": "68afe2cf54f4382972a7b26b39a72e2287cf8744"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/dubai.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/dubai",
+      "id": "621148d9e9955bcb8f3c51f606a20fdb5412b7dc"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/dublin.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/dublin",
+      "id": "c88ac380cedd7856d558ea5faaffe6ec3d193945"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/edinburgh.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/edinburgh",
+      "id": "38c6ba2582fb47e12926281af0236984e7d29424"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/finland.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/finland",
+      "id": "5fa56471700c77c62aa28f3c905107f755c67d31"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/france.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/france",
+      "id": "99e5420f40d9858e0ab58a186720a7248bfeac00"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/frankfurt.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/frankfurt",
+      "id": "c41a9e09726041d0bea914b50699729a0bca65d5"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/germany.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/germany",
+      "id": "d618b7133f19c352472b022a787a72b5e1e44a0c"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/glasgow.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/glasgow",
+      "id": "53bb9b2e8dbb7f40b609ca9877787608750e05f0"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/grenada.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/grenada",
+      "id": "d258b442ff0fd0e31b022a05acce8f47b7c7fe56"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/havana.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/havana",
+      "id": "7be722cdafa8498b5d03c7af24828e200cd04729"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/hungary.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/hungary",
+      "id": "fa3ce30a95d38e6631994eff54dab409a542ffc9"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/jamaica.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/jamaica",
+      "id": "c3d06b54e7e9d4ce6d98d719a59232d4d2093ca2"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/johannesburg.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/johannesburg",
+      "id": "529cce70e6d3b37308e1685591c60d34c027f0cf"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/korea.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/korea",
+      "id": "6b96fded86007c99a3f35f5282e467709744d6ea"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/lagos.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/lagos",
+      "id": "7de231c1b2ca7d2088fd52358dbae52c06aa82aa"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/las-vegas.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/las-vegas",
+      "id": "a281cfc5e8b83d788231db453d964b551529aa94"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/london-heathrow.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/london-heathrow",
+      "id": "19f2a044ee18400fda76429c0b2d6eedd9e95e26"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/los-angeles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/los-angeles",
+      "id": "46de4a8b834e0c3f2939f373b3fc27be9099ee8c"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/Male.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/male",
+      "id": "f2694f02790f7642751cc064fc0166d6c902ab3c"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/manchester.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/manchester",
+      "id": "d3ba7380c6112a91aa44c8a8d9325207c31ecbe7"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/miami.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/miami",
+      "id": "34ee6cbf5587de7417d345b066570cb6e1fa9ba8"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/milan.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/milan",
+      "id": "ae64c2245ffe2f325012abd7a9ed1d71e6414bb9"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/mumbai.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/mumbai",
+      "id": "5b4a3b7382282ffe989bafa9e57d69d5aa5309f8"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/netherlands.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/netherlands",
+      "id": "f18f0e17f82e390e71a6b3b538b47d21c6e65c88"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/newark.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/newark",
+      "id": "a30be737914f5e0cf7e38ca9fe1d25b5db0aff94"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/newcastle.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/newcastle",
+      "id": "72d7ebabbf4e7e4afcee5007782443eef8db1b0b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/nyc.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/nyc",
+      "id": "d0df94cc9e24b8831640ec9cb918b39d21d01ac3"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/orlando.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/orlando",
+      "id": "cd5f4ca5e5da9558d5b516b1a649c45df93b4d26"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/poland.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/poland",
+      "id": "56077ac2913c28c055b5bd6b4fd6cd8c466110d8"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/puerto-rico.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/puerto-rico",
+      "id": "defb705510a16a56b1510dcd3e774dbcb87161ad"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/Riyadh.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/riyadh",
+      "id": "f254f0b36cfa31702c45e67b21d8ed9500a63c98"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/saint-vincent.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/saint-vincent",
+      "id": "e01c590c4f54b2003d980ecd1e063f41d1302c0b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/san-francisco.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/san-francisco",
+      "id": "2ac240e8f676ecd1153ed8f563d8a07670f73bf3"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/seattle.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/seattle",
+      "id": "415ff039fcbb1b1f4aaabff7148d05f5ccaea9f3"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/shanghai.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/shanghai",
+      "id": "56789cebadc037eb5c2db3ea485c4ed273b47263"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/slovenia.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/slovenia",
+      "id": "ce11199f67fd9446e11e2c1d8ea7dc2dbbca64ac"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/st-lucia.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/st-lucia",
+      "id": "c16fc3456bf3d432419a969795062f48596ef291"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/sweden.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/sweden",
+      "id": "d2635dbbde495f3863aad25cd47840a7a0e2c80e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/switzerland.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/switzerland",
+      "id": "2c29f7e5e71f4ae0319e2f0ae623e263982679f3"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/tampa.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/tampa",
+      "id": "2bbd2515d929026d4690d31c1b506bbe547bb9ab"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/thailand.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/thailand",
+      "id": "37382bb5d0929a3b57234da39f6b20571866086e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/tobago.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/tobago",
+      "id": "9d43377cd9bc2a2a4121d912dd7a6acdc6914f55"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/toronto.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/toronto",
+      "id": "6a2fb92cd3d2a76bd237065f23969e75dc97b40b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/turkiye.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/turkiye",
+      "id": "5ce8074e577f45489312a62eb03ae34ef456ff4d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/worldwide-offices/washington.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-network/worldwide-offices/washington",
+      "id": "a89c2bfc1158e1c826b1c52952e1658511b32f86"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services",
+      "id": "15d6d14a092a1f89728836f9881161cf5c485cbd"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/products.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/products",
+      "id": "55690db336e9636551921e0a932734b212bfd25e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/products/cars.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/products/cars",
+      "id": "a4947728002bd871cc378e4f7c9a85a7cceb8b19"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/products/courier.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/products/courier",
+      "id": "7188ee564e86d064e102a0db3611ddf1f0b04021"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/products/custom.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/products/custom",
+      "id": "49e1c1827802ccde6bbcee72823e5bcac81ce931"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/products/Fresh.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/products/fresh",
+      "id": "2091ca9c9d070301164792418ab8d2e5507ecddb"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/products/General.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/products/general",
+      "id": "e1b5b67b9ae084c7570a68229e345fcf531b265f"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/products/mail.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/products/mail",
+      "id": "2527427bc1eac8dc95c0e5bb1855816752bafcb0"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/products/pharma.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/products/pharma",
+      "id": "b582688e2eb3c0ad6e440322804b4c63ff1b73c2"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/products/valuable.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/products/valuable",
+      "id": "49298d11b02fa27743813d00f17f3b83eba3ca0b"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/products/vulnerable.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/products/vulnerable",
+      "id": "0f4b2e1c41c58607786be16607094d41768e2ef7"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-porducts-services/service-levels.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-porducts-services/service-levels",
+      "id": "a6244af8b79044f9e579957c1254a80ac57c9faa"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services",
+      "id": "dee58c136667d7d2a1c19a1d86b944b243754989"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/products.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/products",
+      "id": "5ef1417019debe1d727640c9a0e513f8adc28616"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/products/cars.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/products/cars",
+      "id": "71bf993db6e2ec779a688b3684a2e24486d06ba0"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/products/courier.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/products/courier",
+      "id": "aa1f77e5ab364228a8d9bc8df83b71bdbd2d4432"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/products/custom.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/products/custom",
+      "id": "30982efc1eadabb96abb1e421e9106315b958f00"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/products/Fresh.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/products/fresh",
+      "id": "cee09537d11aeae85a523a28dfe0e5a26873c77e"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/products/General.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/products/general",
+      "id": "90a94bbe3adcf654eeb0ca5b53573b8ee19ba31f"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/products/mail.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/products/mail",
+      "id": "921c1e1aa0e0771fa6b4f358db91ef29f8dec579"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/products/pharma.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/products/pharma",
+      "id": "5a617f5dac72451581ab0f5e497fe8d08e75ef7d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/products/valuable.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/products/valuable",
+      "id": "a4462a10497261cda03d5be1715f167748e170ef"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/products/vulnerable.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/products/vulnerable",
+      "id": "1c92244c4f8768b4d5a12d34747885845e697091"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products-services/service-levels.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products-services/service-levels",
+      "id": "3ff396061f0f90eb4c329b2779dc82fede65e1d7"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products/commodities.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products/commodities",
+      "id": "aedd517a923ebd0071de7fcf9e0e0863189621b6"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products/efreight.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products/efreight",
+      "id": "dd1e76ba8ccf028ebe71dbb5c4af4ff8b9ea5b4d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products/human-remains.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products/human-remains",
+      "id": "7b85d01b90ef206223999677b4439b7195308c53"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products/our-equipment.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products/our-equipment",
+      "id": "8f11857a55eb6bd2a291cc410d67900c23cf3489"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products/relocations.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products/relocations",
+      "id": "9a89c3962d5712106f1d3561b95a58e44137a88d"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products/tracking-devices.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/our-products/tracking-devices",
+      "id": "badc8b96ff86685c6230e918bb8a1fed08ed76a7"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/track.html",
+      "source": "SITEMAPS",
+      "targetPath": "/gb/en/track",
+      "id": "a11bbae5c33ee1855d01c2ff6f325293a6b8af2a"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/global/en/book/pets2.html",
+      "source": "SITEMAPS",
+      "targetPath": "/global/en/book/pets2",
+      "id": "f2ab885ebeb7efe68620dfdba411629177710efb"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/global/en/our-porducts-services/products/pharma.html",
+      "source": "SITEMAPS",
+      "targetPath": "/global/en/our-porducts-services/products/pharma",
+      "id": "f2d9d34e3f889cc88187ec7efacf327648494322"
+    }
+  ],
+  "crawlOptions": {
+    "timeout": 64800000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": -1,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "sitemaps",
+    "logger": {},
+    "strategiesAttempted": [
+      "SITEMAPS"
+    ]
+  },
+  "extractionErrors": [
+    {
+      "url": "https://virginatlanticcargo.com/content/cargo/gb/en/our-network/flight-schedule.html",
+      "status": "301 Moved Permanently Redirect: http://virginatlanticcargo.com/gb/en/our-network/flight-schedule.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/global/en.html",
+      "status": "301 Moved Permanently Redirect: https://www.virginatlanticcargo.com/gb/en.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/global/en.html",
+      "status": "301 Moved Permanently Redirect: https://www.virginatlanticcargo.com/gb/en.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/about-us.html",
+      "status": "301 Moved Permanently Redirect: https://www.virginatlanticcargo.com/gb/en/about-us/our-story.html"
+    },
+    {
+      "url": "http://virginatlanticcargo.com/gb/en/our-network/flight-schedule.html",
+      "status": "301 Moved Permanently Redirect: https://www.virginatlanticcargo.com/gb/en/our-network/flight-schedule.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network.html",
+      "status": "301 Moved Permanently Redirect: https://www.virginatlanticcargo.com/gb/en/our-network/network-map.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-network/reduced-schedule.html",
+      "status": "302 Found Redirect: https://virginatlanticcargo.com/content/cargo/gb/en/our-network/flight-schedule.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/eu-trucking.html",
+      "status": "302 Found Redirect: https://virginatlanticcargo.com/content/dam/cargo/route-maps/EU-Trucking.pdf"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products.html",
+      "status": "302 Found Redirect: https://www.virginatlanticcargo.com/gb/en/our-porducts-services.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products/just-ride.html",
+      "status": "302 Found Redirect: https://www.virginatlanticcargo.com/gb/en/our-porducts-services.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products/must-ride.html",
+      "status": "302 Found Redirect: https://www.virginatlanticcargo.com/gb/en/our-porducts-services.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products/fast-ride.html",
+      "status": "302 Found Redirect: https://www.virginatlanticcargo.com/gb/en/our-porducts-services.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/our-products/vex.html",
+      "status": "302 Found Redirect: https://www.virginatlanticcargo.com/gb/en/our-porducts-services.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/book-online-cps.html",
+      "status": "302 Found Redirect: https://www.virginatlanticcargo.com/global/en.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/track/track-your-cargo.html",
+      "status": "302 Found Redirect: https://www.virginatlanticcargo.com/global/en.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/pets.html",
+      "status": "302 Found Redirect: https://www.virginatlanticcargo.com/global/en/book/pets2.html"
+    },
+    {
+      "url": "https://www.virginatlanticcargo.com/gb/en/book/pharmazone.html",
+      "status": "302 Found Redirect: https://www.virginatlanticcargo.com/global/en/our-porducts-services/products/pharma.html"
+    },
+    {
+      "url": "https://virginatlanticcargo.com/content/dam/cargo/route-maps/EU-Trucking.pdf",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://cargo.virgin-atlantic.com/sitemap.xml",
+      "status": "parseSitemapFromUrl (https://cargo.virgin-atlantic.com/sitemap.xml): Failed to fetch or parse the sitemap. Failed to fetch the sitemap. Status: 404"
+    }
+  ]
+}
