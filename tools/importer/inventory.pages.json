@@ -1,0 +1,476 @@
+{
+  "templates": [
+    {
+      "name": "'Corporate Overview'",
+      "cluster": 1,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/header-footer.html",
+          "uuid": "b70f652e2190fc04bbb43f2c2dc6d65ce46f7891"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en.html",
+          "uuid": "6baf5d09a29eb108a2ee626d4a7eb5428732edfa"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/our-story.html",
+          "uuid": "507449d64fa3bba7a6d811e642a116ef28526adb"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/our-awards.html",
+          "uuid": "4ef497394275d402a7c0cd247b035125962d43da"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news.html",
+          "uuid": "6dbdd75bf280914c320a2c44906e8c209cb65949"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book.html",
+          "uuid": "604cf42324975a2e3691e5b6e4a5c83af3c3b405"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/contact-us.html",
+          "uuid": "dc73b9e0955c1f94b27415223d8c9c1e23d169fc"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/businessupdates.html",
+          "uuid": "fe75bea97f74096e9e63cf383b202ed66557ce92"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/accreditations.html",
+          "uuid": "271f8ba3361649ae2e0d2d762309ea8ae99af82f"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/global-survey.html",
+          "uuid": "c713b97fdfe543c04964f2399f336d386f759da9"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/cargoform.html",
+          "uuid": "ce64c65c32c461cf38391e9a0f40d29832f0fb55"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/Footer.html",
+          "uuid": "170fe0e40aa28bcd34f0e6f5e637d7fb824d2395"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/eservices/myvs-training.html",
+          "uuid": "87c95c7065f1b8e91725a2109e072658d6f4dac1"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/events.html",
+          "uuid": "97e47d80b0247537487f5a3d1a843609d32e31c1"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions.html",
+          "uuid": "a8bbe09168426a93d97c6ea3d58daabbd1193242"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/Industry-Solutions.html",
+          "uuid": "48e3ce95db6558e6762f53142e970fe10f500703"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/our-fleet.html",
+          "uuid": "f6b759b16ae7efde9a8d423c17729e463ac4d7da"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/eservices.html",
+          "uuid": "099da10a40ae3e70c6e3445c7c33d07763cb61c1"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Overview'",
+      "cluster": 2,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/track.html",
+          "uuid": "792d5da655cf7ac83e70dbe0f639447efc39ddec"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/ourserviceslinks.html",
+          "uuid": "9762a9a501f21256752357630009a0e2d8391bde"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels.html",
+          "uuid": "7d4fc2909d3785722c828eb37bdeb6e124170de7"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/aboutus.html",
+          "uuid": "07729e169df90d6b44539787361e856e66ceaa1b"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/book.html",
+          "uuid": "c90293721589992c37f2b712fe231473c4d8fc6c"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/ournetworklinks.html",
+          "uuid": "17aae27b9d26324fcd767dc1e2746bc1855bf3d0"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/eservices.html",
+          "uuid": "16fbac387361d507d3e8a9ae6e08c23c4df404a2"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/header-footer/headerpanels/contactus.html",
+          "uuid": "32c50d8b6ac43e4da4e40033f949e7f422389631"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Template'",
+      "cluster": 3,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/christmas-information.html",
+          "uuid": "b1a90784e57635fa738a1a22f1dd87563b2a3657"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/test.html",
+          "uuid": "2016d9386a0b6d0d45f28c4bff44ba01102c1401"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/US-Tariffs.html",
+          "uuid": "2915be7a93d53611014fa7d840e528ff7a4a70fd"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/faqs.html",
+          "uuid": "dda5f60c05995e5a1b5cc853926a8f4b3bcc641d"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/seasonal-opening-hours.html",
+          "uuid": "502ecc57d58db22cd5e681d637b5895ba00e912d"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/request-mawb.html",
+          "uuid": "162b3a750f14d6d9f3df09224d8e6699ab529ecd"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/open-account.html",
+          "uuid": "60786aa0c1a15641fbf840b2a3be567e70831f7e"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/make-a-claim.html",
+          "uuid": "41110ff50f5b304f8de6558eb076ce5b57bbccf4"
+        }
+      ]
+    },
+    {
+      "name": "'Form Page'",
+      "cluster": 4,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/cargo-system-incident-log.html",
+          "uuid": "3906d540de85eab700f0975c8f690f13b07f68e2"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/eawbregistrationform.html",
+          "uuid": "fdda3e61d505260c9a417898e7bc6abdce3469a1"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/awb.html",
+          "uuid": "53df19da90296e10144a3fb5fb8687c16f3123fb"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/registration-confirm-cargo.html",
+          "uuid": "f47a6d03b5ad53e0f2664cc46efc153bcee49788"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/awb-confirm-cargo.html",
+          "uuid": "b33e4af4d1bb31b14f87c2896ac2d37cc87dc30f"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/cargoform/system-incident-cargo-confirm.html",
+          "uuid": "6ff3c39ec1b92f60337b9d349919c5e0b7d33038"
+        }
+      ]
+    },
+    {
+      "name": "'Event Listing'",
+      "cluster": 5,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/meet-the-team.html",
+          "uuid": "12dc17b4e6423656f9f9fd5bb51d6cea7d364706"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases.html",
+          "uuid": "d0845bc5b09e5e7f33402f3886dc12d5e62a236d"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/news/brussels-500th-cargo-flight.html",
+          "uuid": "d119b48ffa28a1a2eb8ca52f304ba0ab0812bd30"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/news/bat-for-a-chance-pakistan.html",
+          "uuid": "6c44775b42960ad6b2165fe01c56b22dc43c8f96"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/news/bat-for-a-chance.html",
+          "uuid": "9ce991093a376783508689d0023dd5938444b709"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/hkg-syd.html",
+          "uuid": "e826db01167b1e66c3bc22de0edb595e07419dec"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/lhr-jnb.html",
+          "uuid": "4e1f00b0fe0a57d7946ea1eff5e99e3c83c82924"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/news/ACAS-operational-update.html",
+          "uuid": "c2005050f6a4faf013b3853df939572c89fcfeb6"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/news/everything-you-need-to-know-ICS2.html",
+          "uuid": "583341e4a4b6344c3ffb70391374826b74a29563"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/our-media-team.html",
+          "uuid": "234bca5aa74efa013876811028f820c2c2e03709"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Covid-19.html",
+          "uuid": "a2d901f4ee9d43d66871e60ef13a50b4e2b5cf9d"
+        }
+      ]
+    },
+    {
+      "name": "'News Listing'",
+      "cluster": 6,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/vac-introduces-myvs.html",
+          "uuid": "667706b1ad4343c849e4ea626c4505611deab69b"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/mark-faulkner-appointment.html",
+          "uuid": "696b139fb2b1c972ae5cbbecebc9b896473b2a54"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/bfac-sa-partnership-the-catch-trust.html",
+          "uuid": "d04c73a9e3d8580cf7f75ac2c34fd80c93cae44a"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/SAF-Programme.html",
+          "uuid": "0044d55088feb38541a98d3cc5ef8dded0c31f41"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/virgin-atlantic-cargo-adds-releye--containers-.html",
+          "uuid": "8a409a9753fdb8def07b83da5c75b3b5f11471af"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/virgin-atlantic-cargo-selects-accelya-to-power-transformation.html",
+          "uuid": "eb547857be7dd9aac2559ff38dd238eca2160943"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/billund-airport.html",
+          "uuid": "6394800ea40e03b9880bb901e5f2afd86576dad5"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/cargo-one-partnership.html",
+          "uuid": "e30074237fa07a6c8cfd9e65a0aa758556f4cb31"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/virgin-atlantic-cargo-appoints-ecs-group.html",
+          "uuid": "d2d20815e2cfc5baaac3366d87158ad6a75dab6b"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/supporting-pakistan-humanitarian-crisis.html",
+          "uuid": "dad394b1068d348646b853042cd7ff458d28d4c7"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/phill-wardlaw-appointment.html",
+          "uuid": "c502ac8110561e906bc4ea2e68f16a1535506fb0"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/phil-wardlaw-appointment.html",
+          "uuid": "f132749f3be1a5961f94afbba677ddc155903c2e"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/about-us/news/Press_releases/nick-diesel-appointment.html",
+          "uuid": "fe954b027721a600cb946d51c8b6339f621b130d"
+        }
+      ]
+    },
+    {
+      "name": "'Corporate Overview'",
+      "cluster": 7,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/test.html",
+          "uuid": "2e2c47c1ef59403f178f7fd3cdd6b31a0b0354b6"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/ukchristmasnewsletter.html",
+          "uuid": "4ed831d1890c7c9319067b9071a80bda87441c33"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/promo_rates.html",
+          "uuid": "4e20e7896b307ed68b073e75c0d3f40466835786"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/UK_promo_rates.html",
+          "uuid": "83032d55956a68e6fac90ae2df557790514c0a63"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesGLA.html",
+          "uuid": "ff95559fdf05c337b3d2c262ca1f3fd5415df784"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesMAN.html",
+          "uuid": "f220d956cbc0d1c054d4fea903c3152ba61179be"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesBFS.html",
+          "uuid": "5feaddb32721e175ac67fa4888b6408d130c812a"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesABZ.html",
+          "uuid": "12f0168c0793bf556beb0da27b69be51d5e8cd28"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/pets2.html",
+          "uuid": "a4e8f4dbf4f194e291756329ee75097af33c9250"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/test1.html",
+          "uuid": "998d34b15f1274ea2f13fbabefa151b744564033"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/contact-us.html",
+          "uuid": "2037a65d801d3f3ceb8ff7a6bb35488c3d34f7f7"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/test11.html",
+          "uuid": "5e0daa4714d3713b337e7509e7bdca6051aefc01"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesATL.html",
+          "uuid": "002c0200d060f9d319ffc176537aeb92b61fca74"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesBOS.html",
+          "uuid": "6fb8b53a86676f927dafe77876659ac9fb292496"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesIAD.html",
+          "uuid": "1f446597049b3669813ec4a3fd76d82b01cbfc2c"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesLAX.html",
+          "uuid": "7e3e39657a021fd914b55dffd6a5803c435b3feb"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesMIA.html",
+          "uuid": "f709782fed619c7a0c6756b065717ae0925f4c26"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesNYC.html",
+          "uuid": "a80514af983f782a6a563e224093fa993c0cbd27"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesORD.html",
+          "uuid": "5e2381c59a8c365445e03043b16d2bfe43ebb74d"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesSEA.html",
+          "uuid": "85ce5c11ee7fb0ecea7bde35c7c450b72c5ad51a"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/RedhotratesSFO.html",
+          "uuid": "c265e187e2657f81945b2b3dc3f2b691c3152290"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/permanent-bookings.html",
+          "uuid": "f477fb9c6a4b91aad98ec2e3d87b5fa6b5ed4df8"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/book/quick-quote.html",
+          "uuid": "6e559034f96d52eb8291ce6e0898ea6899f815bf"
+        }
+      ]
+    },
+    {
+      "name": "'Documentation Page'",
+      "cluster": 8,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/news.html",
+          "uuid": "5da9a7ef86229b127db0573899070138a3cd59af"
+        }
+      ]
+    },
+    {
+      "name": "'FAQ Page'",
+      "cluster": 9,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/contact-us/faqs/EU-GSSA-Transition.html",
+          "uuid": "7e0e00c04c0459d42368531adcb627f70d224b1a"
+        }
+      ]
+    },
+    {
+      "name": "'product listing page'",
+      "cluster": 10,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/dangerous-goods.html",
+          "uuid": "0cc51fab01a7203496eb389b6ed4846fff68cb57"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/fine-art.html",
+          "uuid": "0374b3efa88eb85601875b21535a62fe05986b35"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/aerospace.html",
+          "uuid": "630b920ec56e74e5100b12e5e4ad8d38b1903ede"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/healthcare.html",
+          "uuid": "1dd90ff86bc96d61be4f78032bc8a1bd811b784a"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/e-commerce.html",
+          "uuid": "df8bdfe3166a11c5b77ea3f258d232fc82ef8ab7"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/agriculture.html",
+          "uuid": "6b52248b1d9805a6b543fc91f23da74d26bff023"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/industry-solutions/automotive.html",
+          "uuid": "ac6c451edb8704e03a7bf87d96b9efdeb47be64a"
+        }
+      ]
+    },
+    {
+      "name": "'Directory Listing Page'",
+      "cluster": 11,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/Footer/termsandconditions.html",
+          "uuid": "b71ce5bc4c326b71290778e80b56b0af21757849"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/Footer/cookie-statement.html",
+          "uuid": "a10fa535192f4607469e878187fd7e746da2341d"
+        },
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/Footer/accessibility.html",
+          "uuid": "266b1cddd9c6769e71ca54c6e374c929ce44d235"
+        }
+      ]
+    },
+    {
+      "name": "'Minimal Content Page'",
+      "cluster": 12,
+      "pages": [
+        {
+          "url": "https://www.virginatlanticcargo.com/gb/en/Footer/termsandconditions/product-service-level-terms.html",
+          "uuid": "534a3d0c482739addd679cd06846f5082985558e"
+        }
+      ]
+    }
+  ]
+}
