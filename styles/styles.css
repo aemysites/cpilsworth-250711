@@ -321,13 +321,13 @@ main .section.light, main .section.highlight {
 }
 
 .section.section-1 {
-  background: rgb(225, 22, 60) none repeat scroll 0% 0% / auto padding-box border-box;
+  background: rgb(225 22 60) none repeat scroll 0% 0% / auto padding-box border-box;
 }
 
 .section.section-2 {
-  background: rgb(234, 234, 234) none repeat scroll 0% 0% / auto padding-box border-box;
+  background: rgb(234 234 234) none repeat scroll 0% 0% / auto padding-box border-box;
 }
 
 .section.section-3 {
-  background: rgba(0, 0, 0, 0) linear-gradient(150deg, rgb(225, 22, 60), rgb(161, 20, 83)) repeat scroll 0% 0% / auto padding-box border-box;
+  background: rgb(0 0 0 / 0%) linear-gradient(150deg, rgb(225 22 60), rgb(161 20 83)) repeat scroll 0% 0% / auto padding-box border-box;
 }
