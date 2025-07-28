@@ -31,3 +31,93 @@
     order: unset;
   }
 }
+
+
+.columns.columns40 {
+  background: #fff;
+  padding: 16px 0;
+}
+
+.columns.columns40 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Reduced for more compact grouping, closely matching the original */
+  max-width: 820px; /* Just enough to fit the row tightly on desktop */
+  margin: 0 auto;
+}
+
+.columns.columns40 .columns-img-col {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+  flex: 0 1 auto;
+}
+
+.columns.columns40 .columns-img-col p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.columns.columns40 .columns-img-col img {
+  width: 32px;
+  height: 32px;
+  max-width: none;
+  max-height: none;
+  min-width: 32px;
+  min-height: 32px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.columns.columns40 .columns-img-col a {
+  color: #b06b8c;
+  font-size: 14px;
+  font-family: gotham-book, Arial, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  letter-spacing: 0;
+  position: relative;
+  padding-right: 16px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.columns.columns40 .columns-img-col a::after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin-left: 2px;
+  background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 3l5 5-5 5' stroke='%23e65c7b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/14px 14px;
+  content: "";
+}
+
+@media (width <= 900px) {
+  .columns.columns40 > div {
+    max-width: 440px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (width <= 600px) {
+  .columns.columns40 > div {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    max-width: 98vw;
+  }
+
+  .columns.columns40 .columns-img-col {
+    justify-content: flex-start;
+  }
+}
