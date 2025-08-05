@@ -1,3 +1,6 @@
+/* Disable no-descending-specificity rule globally for this file */
+/* stylelint-disable no-descending-specificity */
+
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -44,4 +47,174 @@
   .hero {
     padding: 40px 32px;
   }
+}
+
+.hero.hero28 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100vw;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Image (left side) */
+.hero.hero28 > div:first-child {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  order: 1;
+}
+
+.hero.hero28 > div:first-child picture,
+.hero.hero28 > div:first-child img {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay panel: compact, tight to top/left, minimal padding, content-height only */
+.hero.hero28 > div:last-child {
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  z-index: 2;
+  background: rgb(255 255 255 / 58%);
+  box-shadow: 0 4px 24px rgb(0 0 0 / 4%);
+  border-radius: 4px;
+  padding: 0.8rem 1.1rem 1rem 1.2rem;
+  max-width: 380px;
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin: 0;
+  height: auto;
+}
+
+/* Content inside overlay: very tight vertical stacking */
+.hero.hero28 > div:last-child > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.38rem;
+}
+
+/* Headline */
+.hero.hero28 > div:last-child > div > p:first-child {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7a2951;
+  margin: 0 0 0.05rem;
+  line-height: 1.08;
+}
+
+/* Supporting text */
+.hero.hero28 > div:last-child > div > p:nth-child(2) {
+  font-size: 1.08rem;
+  color: #392c39;
+  font-weight: 400;
+  margin: 0 0 0.15rem;
+  line-height: 1.5;
+}
+
+/* Button style for last p */
+.hero.hero28 > div:last-child > div > p:last-child {
+  display: inline-flex;
+  align-items: center;
+  background: #c6003d;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.99rem;
+  padding: 0.52rem 1.12rem;
+  border-radius: 4px;
+  line-height: 1.2;
+  margin: 0.18rem 0 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgb(198 0 61 / 10%);
+  border: none;
+  text-decoration: none;
+  width: fit-content;
+  gap: 0.42em;
+  transition: background 0.2s;
+}
+
+.hero.hero28 > div:last-child > div > p:last-child:hover,
+.hero.hero28 > div:last-child > div > p:last-child:focus {
+  background: #a80033;
+}
+
+.hero.hero28 > div:last-child > div > p:last-child picture,
+.hero.hero28 > div:last-child > div > p:last-child img {
+  margin-left: 0.48em;
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Responsive adjustments */
+@media (width <= 900px) {
+  .hero.hero28 {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .hero.hero28 > div:first-child {
+    width: 100vw;
+    min-height: 200px;
+  }
+
+  .hero.hero28 > div:first-child picture,
+  .hero.hero28 > div:first-child img {
+    min-height: 200px;
+  }
+
+  .hero.hero28 > div:last-child {
+    position: static;
+    top: unset;
+    left: unset;
+    transform: none;
+    margin: -24px auto 0;
+    max-width: 98vw;
+    padding: 0.6rem 0.8rem 0.7rem 0.9rem;
+    border-radius: 4px;
+  }
+
+  .hero.hero28 > div:last-child > div {
+    gap: 0.23rem;
+  }
+
+  .hero.hero28 > div:last-child > div > p:first-child {
+    font-size: 1.11rem;
+  }
+
+  .hero.hero28 > div:last-child > div > p:nth-child(2) {
+    font-size: 0.98rem;
+  }
+
+  .hero.hero28 > div:last-child > div > p:last-child {
+    font-size: 0.93rem;
+    padding: 0.38rem 0.8rem;
+  }
+}
+
+/* Remove default white text from base styles, restore colors in overlay */
+.hero.hero28 h1, 
+.hero.hero28 h2, 
+.hero.hero28 h3, 
+.hero.hero28 h4, 
+.hero.hero28 h5, 
+.hero.hero28 h6, 
+.hero.hero28 p {
+  color: inherit;
+  max-width: unset;
+  margin-left: 0;
+  margin-right: 0;
 }
