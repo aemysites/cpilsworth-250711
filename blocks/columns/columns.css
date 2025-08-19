@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -43,8 +44,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Reduced for more compact grouping, closely matching the original */
-  max-width: 820px; /* Just enough to fit the row tightly on desktop */
+  gap: 20px;
+  max-width: 820px;
   margin: 0 auto;
 }
 
@@ -119,5 +120,96 @@
 
   .columns.columns40 .columns-img-col {
     justify-content: flex-start;
+  }
+}
+
+
+.columns.columns20 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Each column */
+.columns.columns20 > div > div {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 18px 52px 4px; /* even more left/right, minimal bottom */
+  border-right: 1px solid #eee;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* Remove divider from last column */
+.columns.columns20 > div > div:last-child {
+  border-right: none;
+}
+
+/* Headings */
+.columns.columns20 h2 {
+  color: #6A2172;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--heading-font-family);
+  margin-top: 0;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+/* Paragraphs */
+.columns.columns20 p {
+  color: #333;
+  font-size: 14px;
+  font-family: var(--body-font-family);
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* CTA link (first a in last p) */
+.columns.columns20 > div > div p:last-of-type a:first-child {
+  color: #A23C97;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.columns.columns20 > div > div p:last-of-type a:first-child:hover {
+  text-decoration: underline;
+  color: #6A2172;
+}
+
+/* Visually group arrow/icon with CTA link if present */
+.columns.columns20 > div > div p:last-of-type picture,
+.columns.columns20 > div > div p:last-of-type img {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  margin-left: 2px;
+  display: inline-block;
+}
+
+/* Responsive stacking on smaller screens */
+@media (width <= 900px) {
+  .columns.columns20 > div {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .columns.columns20 > div > div {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 14px 16px 4px;
+  }
+
+  .columns.columns20 > div > div:last-child {
+    border-bottom: none;
   }
 }
