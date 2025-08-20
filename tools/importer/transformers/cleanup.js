@@ -45,8 +45,10 @@ export default function transform(hookName, element) {
       'style',
       'script',
       'noscript',
+      '.linkArrow',
     ]);
   }
+
   if (hookName === TransformHook.afterTransform) {
     // cleanup unwanted attributes
     cleanUpAttributes(element);
@@ -55,6 +57,7 @@ export default function transform(hookName, element) {
       'source',
       'iframe',
       'link',
+      '.linkArrow',
     ]);
   }
 }

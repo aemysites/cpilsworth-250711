@@ -198,7 +198,7 @@ function transformPage(main, { inventory, ...source }) {
       element.remove();
     }
   });
-
+  
   // before page transform hook
   WebImporter.Import.transform(TransformHook.beforePageTransform, main, { ...source });
 
@@ -353,6 +353,13 @@ export default {
     }
 
     let main = document.body;
+
+    WebImporter.DOMUtils.remove(main, [
+      '.new-news-alert',
+      '.sharedHeader',
+      '.skiptocontent',
+      '.search-modal',
+    ]);
 
     // before transform hook
     WebImporter.Import.transform(TransformHook.beforeTransform, main, { ...source, inventory });

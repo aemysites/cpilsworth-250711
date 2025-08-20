@@ -15,6 +15,10 @@ export default function parse(element, { document }) {
   const columns = colDivs.map(col => {
     if (!col) return document.createTextNode('');
     const section = col.querySelector('section');
+
+    // Remove any aria-offscreen nodes in content
+    section.querySelectorAll('.aria-offscreen').forEach((n) => n.remove());
+
     // If <section> is found, use it; otherwise, fallback to the column div
     return section || col;
   });
