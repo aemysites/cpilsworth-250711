@@ -1,12 +1,36 @@
 footer {
   font-size: var(--body-font-size-xs);
-  background: rgb(234 234 234) none repeat scroll 0% 0% / auto padding-box border-box;
+  background: var(--footer-background-color) none repeat scroll 0% 0% / auto padding-box border-box;
+  color: var(--footer-color);
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-footer .footer>div {
+footer .footer > div {
   margin: auto;
-  max-width: 1200px;
+  max-width: 1500px;
   padding: 40px 24px 24px;
+}
+
+footer .footer > div h3 {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+footer .footer > div ul {
+  padding-left: 0;
+}
+
+footer .footer > div  ul li {
+  list-style-type: none;
+  font-size: 12px;
+}
+
+footer .footer > div  ul li a {
+  color: var(--footer-color);
+  font-size: 12px;
 }
 
 footer .footer p {

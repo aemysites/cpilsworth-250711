@@ -13,10 +13,13 @@
 :root {
   --background-color: white;
   --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
+  --dark-color: #666;
+  --text-color: #222;
+  --title-text-color: #61126b;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --footer-background-color: #e9e9e9;
+  --footer-color: var(--dark-color);
   --body-font-family: "gotham-book", "gotham-book Fallback";
   --heading-font-family: "gotham-book", "gotham-book Fallback";
   --body-font-size-m: 12px;
@@ -169,6 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
+  color: var(--title-text-color);
 }
 
 h1 {
