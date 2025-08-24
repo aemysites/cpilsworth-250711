@@ -180,7 +180,6 @@
   }
 }
 
-/* Card Styles */
 .cards.cards13 > ul > li {
   display: flex;
   flex-direction: column;
@@ -188,11 +187,10 @@
   justify-content: flex-start;
   border: 1px solid #E3E3E3;
   background: #fff;
-  padding: 14px 22px 22px; /* more top & bottom padding for breathing room */
+  padding: 14px 22px 22px;
   box-sizing: border-box;
 }
 
-/* Card Icon/Image */
 .cards.cards13 .cards-card-image {
   width: 40px;
   height: 40px;
@@ -212,7 +210,6 @@
   margin: 0;
 }
 
-/* Card Body */
 .cards.cards13 .cards-card-body {
   text-align: center;
   padding: 0;
@@ -223,7 +220,6 @@
   align-items: center;
 }
 
-/* Card Title */
 .cards.cards13 .cards-card-body h2 {
   color: #6B3686;
   font-size: 1.32rem;
@@ -235,7 +231,6 @@
   letter-spacing: 0.01em;
 }
 
-/* Description Text */
 .cards.cards13 .cards-card-body p {
   color: #222;
   font-size: 1.03rem;
@@ -246,8 +241,159 @@
   max-width: 100%;
 }
 
-/* Bold in Description */
 .cards.cards13 .cards-card-body strong {
   color: #6B3686;
   font-weight: 600;
+}
+
+
+.cards.cards36 {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0;
+}
+
+/* Vertical stack for the list, no grid columns */
+.cards.cards36 > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each card is a row: text left, image right */
+.cards.cards36 > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+  gap: 32px;
+}
+
+/* Ensure image on right, text on left */
+.cards.cards36 > ul > li > .cards-card-image {
+  order: 2;
+}
+
+.cards.cards36 > ul > li > .cards-card-body {
+  order: 1;
+}
+
+.cards.cards36 .cards-card-image {
+  flex: 0 0 180px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 180px;
+  min-height: 180px;
+  margin: 0;
+  line-height: 0;
+}
+
+.cards.cards36 .cards-card-image picture,
+.cards.cards36 .cards-card-image img {
+  width: 180px;
+  height: 180px;
+  max-width: 180px;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
+  background: #f5f5f5;
+  display: block;
+}
+
+.cards.cards36 .cards-card-body {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.cards.cards36 .cards-card-body h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #6B217A;
+  margin: 0 0 16px;
+  line-height: 1.2;
+  font-family: var(--heading-font-family, 'Open Sans', Arial, sans-serif);
+  text-align: left;
+}
+
+.cards.cards36 .cards-card-body p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  font-family: var(--body-font-family, 'Open Sans', Arial, sans-serif);
+  text-align: left;
+}
+
+.cards.cards36 .cards-card-body p.button-container {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+/* Button styling */
+.cards.cards36 .cards-card-body a.button {
+  background: #951B4F;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 28px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 4%);
+  margin: 0;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  transition: background 0.2s;
+}
+
+.cards.cards36 .cards-card-body a.button:hover,
+.cards.cards36 .cards-card-body a.button:focus {
+  background: #B1236B;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive: stack image above text within each card */
+@media (width <= 900px) {
+  .cards.cards36 {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  .cards.cards36 > ul > li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .cards.cards36 > ul > li > .cards-card-image,
+  .cards.cards36 .cards-card-image {
+    order: unset;
+    margin-bottom: 24px;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards.cards36 .cards-card-body {
+    width: 100%;
+  }
 }
