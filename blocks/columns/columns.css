@@ -1,4 +1,3 @@
-/* stylelint-disable no-descending-specificity */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -131,26 +130,20 @@
   align-items: stretch;
   width: 100%;
 }
-
-/* Each column */
 .columns.columns20 > div > div {
   flex: 1 1 0%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 18px 52px 4px; /* even more left/right, minimal bottom */
+  padding: 18px 52px 4px;
   border-right: 1px solid #eee;
   box-sizing: border-box;
   min-width: 0;
 }
-
-/* Remove divider from last column */
 .columns.columns20 > div > div:last-child {
   border-right: none;
 }
-
-/* Headings */
 .columns.columns20 h2 {
   color: #6A2172;
   font-size: 18px;
@@ -160,8 +153,6 @@
   margin-bottom: 14px;
   line-height: 1.2;
 }
-
-/* Paragraphs */
 .columns.columns20 p {
   color: #333;
   font-size: 14px;
@@ -170,8 +161,6 @@
   margin-bottom: 12px;
   line-height: 1.6;
 }
-
-/* CTA link (first a in last p) */
 .columns.columns20 > div > div p:last-of-type a:first-child {
   color: #A23C97;
   font-weight: 500;
@@ -185,8 +174,6 @@
   text-decoration: underline;
   color: #6A2172;
 }
-
-/* Visually group arrow/icon with CTA link if present */
 .columns.columns20 > div > div p:last-of-type picture,
 .columns.columns20 > div > div p:last-of-type img {
   vertical-align: middle;
@@ -195,8 +182,6 @@
   margin-left: 2px;
   display: inline-block;
 }
-
-/* Responsive stacking on smaller screens */
 @media (width <= 900px) {
   .columns.columns20 > div {
     flex-direction: column;
@@ -211,5 +196,91 @@
 
   .columns.columns20 > div > div:last-child {
     border-bottom: none;
+  }
+}
+
+
+.columns {
+  background: #fff;
+  padding: 40px 32px;
+}
+
+.columns > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 64px;
+  width: 100%;
+}
+
+/* Each column */
+.columns > div > div {
+  flex: 1 1 0;
+  min-width: 170px;
+  max-width: 260px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Headings */
+.columns > div > div > h3 {
+  font-size: 1.28em;
+  font-weight: 700;
+  margin: 0 0 28px 0;
+  color: #7B2869;
+  letter-spacing: 0.01em;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.columns > div > div:first-child > h3 {
+  color: #C8102E;
+}
+
+/* List styles */
+.columns > div > div > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.columns > div > div > ul > li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+  text-align: left;
+  line-height: 1.7;
+}
+
+/* Only links are red, not whole list item */
+.columns > div > div > ul > li > a {
+  color: #C8102E;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 400;
+}
+
+.columns > div > div > ul > li > a:hover,
+.columns > div > div > ul > li > a:focus {
+  color: #7B2869;
+  text-decoration: underline;
+}
+
+/* Responsive: stack columns vertically on small screens */
+@media (max-width: 900px) {
+  .columns {
+    padding: 28px 8px;
+  }
+  .columns > div {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .columns > div > div {
+    max-width: 100%;
+    min-width: 0;
   }
 }
