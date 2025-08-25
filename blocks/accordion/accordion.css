@@ -264,6 +264,10 @@
   text-align: left;
 }
 
+.accordion.accordion7 .accordion-item-label {
+  font-size: 18px;
+}
+
 @media (width >= 900px) {
   .accordion.accordion7 {
     padding-left: 0;
