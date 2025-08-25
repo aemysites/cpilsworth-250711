@@ -126,9 +126,9 @@
 
 @media (width>=900px) {
   :root {
-    --body-font-size-m: 12px;
-    --body-font-size-s: 9.96px;
-    --body-font-size-xs: 8.04px;
+    --body-font-size-m: 16px;
+    --body-font-size-s: 12px;
+    --body-font-size-xs: 10px;
     --heading-font-size-xxl: 12px;
     --heading-font-size-xl: 25px;
     --heading-font-size-l: 13px;
