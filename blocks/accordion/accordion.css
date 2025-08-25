@@ -1,8 +1,8 @@
+/* stylelint-disable no-descending-specificity */
 .accordion details {
   border: 1px solid #dadada;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
   margin-top: 24px;
 }
@@ -58,4 +58,114 @@
 .accordion details[open] .accordion-item-body {
   border-top: 1px solid #dadada;
   background-color: var(--background-color);
+}
+
+
+.accordion.accordion3 {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+}
+
+/* Remove box borders and spacing between items */
+.accordion.accordion3 .accordion-item {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add divider line between items, except last */
+.accordion.accordion3 .accordion-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+/* Layout for summary/question row */
+.accordion.accordion3 .accordion-item-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px 18px 24px;
+  font-size: 16px;
+  color: #7d2082;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 42px;
+  text-align: left;
+  gap: 0;
+}
+
+/* Left-align and expand the question text */
+.accordion.accordion3 .accordion-item-label p {
+  margin: 0;
+  flex: 1 1 0;
+  text-align: left;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.3;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+/* Chevron styles - true downward "V" arrow using border-bottom and border-right */
+.accordion.accordion3 .accordion-item-label::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  border-style: solid;
+  border-color: #7d2082;
+  border-width: 0 2px 2px 0;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  transition: transform 0.3s;
+  background: none;
+  vertical-align: middle;
+  position: relative;
+  top: 1px;
+}
+
+/* Chevron rotates upward on open */
+.accordion.accordion3 details[open] .accordion-item-label::after {
+  transform: rotate(-135deg);
+}
+
+/* Hide default summary marker */
+.accordion.accordion3 .accordion-item-label::-webkit-details-marker {
+  display: none;
+}
+
+/* Remove background on hover/focus */
+.accordion.accordion3 .accordion-item-label:focus,
+.accordion.accordion3 .accordion-item-label:hover {
+  background: #fff;
+}
+
+/* Answer/body styles */
+.accordion.accordion3 .accordion-item-body {
+  padding: 8px 22px 16px 24px;
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+  border: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+/* Ensure no extra border/background on open body */
+.accordion.accordion3 details[open] .accordion-item-body {
+  border: none;
+  background: #fff;
 }
