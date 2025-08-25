@@ -47,6 +47,8 @@ export default function transform(hookName, element) {
       'noscript',
       '.new-cookie-comp',
       '#newWin',
+      '.new-cookie-comp',
+      '.breadCrumbsComp',
     ]);
   }
 
@@ -59,7 +61,7 @@ export default function transform(hookName, element) {
       'iframe',
       'link',
       '.linkArrow',
-      '.new-cookie-comp',
+  
     ]);
   }
 }
