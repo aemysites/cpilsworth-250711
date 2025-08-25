@@ -22,15 +22,15 @@
   --footer-color: var(--dark-color);
   --body-font-family: "gotham-book", "gotham-book Fallback";
   --heading-font-family: "gotham-book", "gotham-book Fallback";
-  --body-font-size-m: 12px;
-  --body-font-size-s: 9.96px;
-  --body-font-size-xs: 8.04px;
-  --heading-font-size-xxl: 12px;
-  --heading-font-size-xl: 25px;
-  --heading-font-size-l: 13px;
-  --heading-font-size-m: 12px;
-  --heading-font-size-s: 9.96px;
-  --heading-font-size-xs: 8.04px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 12px;
+  --body-font-size-xs: 10px;
+  --heading-font-size-xxl: 70px;
+  --heading-font-size-xl: 32px;
+  --heading-font-size-l: 22;
+  --heading-font-size-m: 16px;
+  --heading-font-size-s: 14px;
+  --heading-font-size-xs: 12px;
   --nav-height: 120px;
   --header-height: var(--nav-height);
 }
