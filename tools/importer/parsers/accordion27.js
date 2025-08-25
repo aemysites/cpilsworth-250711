@@ -1,7 +1,7 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
   // Accordion block header as shown in the example
-  const headerRow = ['Accordion (accordion27)'];
+  const headerRow = ['Accordion'];
   const rows = [];
 
   // Find the main menu list

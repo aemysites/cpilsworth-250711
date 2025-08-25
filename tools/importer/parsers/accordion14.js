@@ -7,7 +7,7 @@ export default function parse(element, { document }) {
   const accordLis = Array.from(accordUL.querySelectorAll(':scope > li'));
   // Accordion block header exactly as required, single column
   const rows = [
-    ['Accordion (accordion14)'],
+w    ['Accordion'],
   ];
   // Add a row for each accordion item, exactly two columns: title and content
   accordLis.forEach((li) => {

@@ -1,7 +1,7 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
   // Table header as required by spec
-  const headerRow = ['Accordion (accordion3)'];
+  const headerRow = ['Accordion'];
   const rows = [headerRow];
 
   // Find the <ul class="accordUL"> with accordion items

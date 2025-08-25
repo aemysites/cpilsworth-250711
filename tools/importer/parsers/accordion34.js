@@ -1,7 +1,7 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
   // Header row for the block
-  const rows = [['Accordion (accordion34)']];
+  const rows = [['Accordion']];
 
   // Find the accordion item elements (li.accordLi)
   const ul = element.querySelector('ul.accordUL');

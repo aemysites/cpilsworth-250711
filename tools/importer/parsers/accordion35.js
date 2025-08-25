@@ -1,7 +1,7 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
   // Table header
-  const headerRow = ['Accordion (accordion35)'];
+  const headerRow = ['Accordion'];
   const rows = [headerRow];
 
   // Get the main accordion list

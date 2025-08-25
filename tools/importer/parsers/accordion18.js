@@ -1,7 +1,7 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
   // Accordion block header
-  const headerRow = ['Accordion (accordion18)'];
+  const headerRow = ['Accordion'];
   const rows = [headerRow];
 
   // Find the UL with all accordion items

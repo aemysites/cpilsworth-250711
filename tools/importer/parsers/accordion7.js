@@ -7,7 +7,7 @@ export default function parse(element, { document }) {
 
   const rows = [];
   // Header row must match the example exactly
-  rows.push(['Accordion (accordion7)']);
+  rows.push(['Accordion']);
 
   // For each accordion section
   lis.forEach(li => {
