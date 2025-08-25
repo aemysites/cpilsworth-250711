@@ -1,6 +1,6 @@
 /* stylelint-disable no-descending-specificity */
-.accordion details {
-  border: 1px solid #dadada;
+.accordion {
+  border: 1px solid var(--light-border-color)
 }
 
 .accordion details + details {
@@ -42,8 +42,6 @@
   transform: translateY(-50%) rotate(135deg);
   width: 6px;
   height: 6px;
-  border: 2px solid;
-  border-width: 2px 2px 0 0;
   transition: transform 0.2s;
 }
 
@@ -56,7 +54,6 @@
 }
 
 .accordion details[open] .accordion-item-body {
-  border-top: 1px solid #dadada;
   background-color: var(--background-color);
 }
 
@@ -72,14 +69,10 @@
 }
 
 .accordion.accordion3 .accordion-item {
-  border: none;
   margin: 0;
   padding: 0;
 }
 
-.accordion.accordion3 .accordion-item:not(:last-child) {
-  border-bottom: 1px solid #eee;
-}
 
 .accordion.accordion3 .accordion-item-label {
   display: flex;
@@ -150,14 +143,8 @@
   font-size: 16px;
   color: #333;
   background: #fff;
-  border: none;
   box-sizing: border-box;
   line-height: 1.5;
-}
-
-.accordion.accordion3 details[open] .accordion-item-body {
-  border: none;
-  background: #fff;
 }
 
 
@@ -167,7 +154,6 @@
   margin: 0 auto;
   padding: 0;
   background: #fff;
-  border: none;
   box-shadow: none;
   box-sizing: border-box;
 }
@@ -221,8 +207,8 @@
   margin-left: 8px;
   width: 8px;
   height: 8px;
-  border: solid #93328e;
-  border-width: 1px 1px 0 0;
+  border: solid var(--accent-color);
+  border-width: 2px 2px 0 0;
   transform: rotate(135deg);
   transition: transform 0.2s;
   align-self: center;
@@ -239,12 +225,11 @@
   display: none;
 }
 
-/* Only divider between items, not a box */
-.accordion.accordion7 > details:not(:last-child) > summary {
-  border-bottom: 1px solid #ededed;
+.accordion.accordion7 > details:not(:last-child)  {
+  border-bottom: 1px solid var(--light-border-color);
 }
 
-.accordion.accordion7 > details:last-child > summary {
+.accordion.accordion7 > details:last-child {
   border-bottom: none;
 }
 
@@ -258,13 +243,17 @@
   background: #fff;
   border: none;
   margin: 0;
-  box-sizing: border-box;
-  padding: 16px 0 0;
+  margin-top: 55px;
+  box-sizing: border-box;  
   width: 100%;
   text-align: left;
 }
 
-.accordion.accordion7 .accordion-item-label {
+.accordion.accordion7 .accordion-item {
+  padding: 40px 21px;
+}
+
+.accordion.accordion7 .accordion-item-label p {
   font-size: 18px;
 }
 

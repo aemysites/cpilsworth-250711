@@ -12,9 +12,11 @@
  */
 :root {
   --background-color: white;
+  --light-border-color: #d8d7d7;
   --light-color: #f8f8f8;
   --dark-color: #666;
   --text-color: #222;
+  --accent-color: #e5334e;
   --title-text-color: #61126b;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
@@ -27,7 +29,7 @@
   --body-font-size-xs: 10px;
   --heading-font-size-xxl: 70px;
   --heading-font-size-xl: 32px;
-  --heading-font-size-l: 22;
+  --heading-font-size-l: 22px;
   --heading-font-size-m: 16px;
   --heading-font-size-s: 14px;
   --heading-font-size-xs: 12px;
