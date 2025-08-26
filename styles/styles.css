@@ -25,10 +25,11 @@
   --footer-color: var(--dark-color);
   --body-font-family: "gotham-book", "gotham-book Fallback";
   --heading-font-family: "gotham-book", "gotham-book Fallback";
+  --heading-h1-font-family: "gotham-xlight", "gotham-book Fallback";
   --body-font-size-m: 16px;
   --body-font-size-s: 12px;
   --body-font-size-xs: 10px;
-  --heading-font-size-xxl: 70px;
+  --heading-font-size-xxl: 40px;
   --heading-font-size-xl: 32px;
   --heading-font-size-l: 22px;
   --heading-font-size-m: 16px;
@@ -132,7 +133,7 @@
     --body-font-size-m: 16px;
     --body-font-size-s: 12px;
     --body-font-size-xs: 10px;
-    --heading-font-size-xxl: 36px;
+    --heading-font-size-xxl: 70px;
     --heading-font-size-xl: 32px;
     --heading-font-size-l: 22px;
     --heading-font-size-m: 16px;
@@ -179,7 +180,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family: var(--heading-h1-font-family);
   font-size: var(--heading-font-size-xxl);
+  font-weight: 400;
+  color: var(--accent-color);
+  
 }
 
 h2 {
