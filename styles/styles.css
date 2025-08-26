@@ -18,8 +18,9 @@
   --text-color: #222;
   --accent-color: #e5334e;
   --title-text-color: #61126b;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --title-text-color-dark: #4f145b;
+  --link-color: #da0530;
+  --link-hover-color: #dbbac5;
   --footer-background-color: #e9e9e9;
   --footer-color: var(--dark-color);
   --body-font-family: "gotham-book", "gotham-book Fallback";
@@ -245,7 +246,6 @@ a.button:any-link, button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
@@ -262,7 +262,7 @@ a.button:any-link, button {
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus {
-  background-color: var(--link-hover-color);
+  color: var(--link-hover-color);
   cursor: pointer;
 }
 
