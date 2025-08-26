@@ -1,6 +1,3 @@
-/* Disable no-descending-specificity rule globally for this file */
-/* stylelint-disable no-descending-specificity */
-
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -49,172 +46,169 @@
   }
 }
 
+
 .hero.hero28 {
+  position: relative;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   width: 100vw;
-  min-height: 400px;
-  position: relative;
-  overflow: hidden;
-  padding: 0;
+  min-height: 420px;
   box-sizing: border-box;
+  overflow: hidden;
+  background: none;
+  padding: 0;
 }
 
-/* Image (left side) */
-.hero.hero28 > div:first-child {
+/* Inner flex container: lays out image and text row-wise */
+.hero.hero28 > div {
   flex: 1 1 0;
-  min-width: 0;
-  height: 100%;
   display: flex;
-  order: 1;
-}
-
-.hero.hero28 > div:first-child picture,
-.hero.hero28 > div:first-child img {
+  flex-direction: row;
   width: 100%;
   height: 100%;
-  min-height: 400px;
+  position: relative;
+  min-height: 420px;
+  align-items: center;
+}
+
+/* Image fills all available space */
+.hero.hero28 > div > div:first-child {
+  flex: 1 1 0;
+  order: 1;
+  height: 100%;
+  min-width: 0;
+  min-height: 420px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+.hero.hero28 > div > div:first-child picture,
+.hero.hero28 > div > div:first-child img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* Overlay panel: compact, tight to top/left, minimal padding, content-height only */
-.hero.hero28 > div:last-child {
+/* Text panel: compact, tight to content, vertically centered, flush left */
+.hero.hero28 > div > div:last-child {
   position: absolute;
-  left: 12px;
-  top: 16px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(236 233 241 / 88%);
+  padding: 1rem 1.4rem 0.8rem 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 8%);
   z-index: 2;
-  background: rgb(255 255 255 / 58%);
-  box-shadow: 0 4px 24px rgb(0 0 0 / 4%);
-  border-radius: 4px;
-  padding: 0.8rem 1.1rem 1rem 1.2rem;
-  max-width: 380px;
-  width: auto;
-  display: flex;
-  align-items: flex-start;
-  box-sizing: border-box;
-  margin: 0;
-  height: auto;
-}
-
-/* Content inside overlay: very tight vertical stacking */
-.hero.hero28 > div:last-child > div {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.38rem;
+  gap: 0.45rem;
+  align-items: flex-start;
+  margin: 0;
+  max-width: 390px;
+  min-width: 260px;
+  width: fit-content;
 }
 
-/* Headline */
-.hero.hero28 > div:last-child > div > p:first-child {
+/* Headline styles */
+.hero.hero28 > div > div:last-child h2 {
   font-size: 2rem;
+  color: #7d1856;
   font-weight: 700;
-  color: #7a2951;
-  margin: 0 0 0.05rem;
-  line-height: 1.08;
+  margin: 0 0 0.3rem;
+  text-align: left;
+  line-height: 1.13;
+  letter-spacing: -0.01em;
+  font-family: var(--heading-font-family);
 }
 
-/* Supporting text */
-.hero.hero28 > div:last-child > div > p:nth-child(2) {
-  font-size: 1.08rem;
-  color: #392c39;
-  font-weight: 400;
-  margin: 0 0 0.15rem;
+/* Paragraph styles */
+.hero.hero28 > div > div:last-child p:not(.button-container) {
+  font-size: 1.03rem;
+  color: #4a4a4a;
+  margin: 0 0 0.3rem;
+  text-align: left;
   line-height: 1.5;
 }
 
-/* Button style for last p */
-.hero.hero28 > div:last-child > div > p:last-child {
-  display: inline-flex;
-  align-items: center;
-  background: #c6003d;
+/* Button container: tight grouping, flush left */
+.hero.hero28 > div > div:last-child .button-container {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Button styles: compact and left aligned */
+.hero-container > .hero-wrapper > .block.hero.hero28 > div > div:last-child .button-container .button {
+  background: #c70039;
   color: #fff;
+  padding: 0.54rem 1.15rem;
+  border-radius: 6px;
   font-weight: 600;
-  font-size: 0.99rem;
-  padding: 0.52rem 1.12rem;
-  border-radius: 4px;
-  line-height: 1.2;
-  margin: 0.18rem 0 0;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgb(198 0 61 / 10%);
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 9%);
   border: none;
+  margin: 0;
   text-decoration: none;
-  width: fit-content;
-  gap: 0.42em;
   transition: background 0.2s;
-}
-
-.hero.hero28 > div:last-child > div > p:last-child:hover,
-.hero.hero28 > div:last-child > div > p:last-child:focus {
-  background: #a80033;
-}
-
-.hero.hero28 > div:last-child > div > p:last-child picture,
-.hero.hero28 > div:last-child > div > p:last-child img {
-  margin-left: 0.48em;
-  width: 1.1em;
-  height: 1.1em;
-  vertical-align: middle;
   display: inline-block;
+  line-height: 1.16;
 }
 
-/* Responsive adjustments */
+.hero-container > .hero-wrapper > .block.hero.hero28 > div > div:last-child .button-container .button:hover,
+.hero-container > .hero-wrapper > .block.hero.hero28 > div > div:last-child .button-container .button:focus {
+  background: #a9002e;
+}
+
+/* Responsive: stack vertically and adjust panel */
 @media (width <= 900px) {
   .hero.hero28 {
-    flex-direction: column;
     min-height: 0;
   }
 
-  .hero.hero28 > div:first-child {
+  .hero.hero28 > div {
+    flex-direction: column;
+    min-height: 0;
+    align-items: stretch;
+  }
+
+  .hero.hero28 > div > div:first-child {
+    min-height: 200px;
     width: 100vw;
+  }
+
+  .hero.hero28 > div > div:first-child picture,
+  .hero.hero28 > div > div:first-child img {
     min-height: 200px;
   }
 
-  .hero.hero28 > div:first-child picture,
-  .hero.hero28 > div:first-child img {
-    min-height: 200px;
-  }
-
-  .hero.hero28 > div:last-child {
+  .hero.hero28 > div > div:last-child {
     position: static;
-    top: unset;
-    left: unset;
     transform: none;
-    margin: -24px auto 0;
+    padding: 0.7rem 0.5rem 0.6rem;
     max-width: 98vw;
-    padding: 0.6rem 0.8rem 0.7rem 0.9rem;
-    border-radius: 4px;
+    min-width: unset;
+    border-radius: 0;
+    margin: 0.5rem 0 0;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+    align-items: flex-start;
+    width: 100%;
   }
 
-  .hero.hero28 > div:last-child > div {
-    gap: 0.23rem;
+  .hero.hero28 > div > div:last-child h2 {
+    font-size: 1rem;
   }
 
-  .hero.hero28 > div:last-child > div > p:first-child {
-    font-size: 1.11rem;
-  }
-
-  .hero.hero28 > div:last-child > div > p:nth-child(2) {
-    font-size: 0.98rem;
-  }
-
-  .hero.hero28 > div:last-child > div > p:last-child {
+  .hero.hero28 > div > div:last-child p:not(.button-container) {
     font-size: 0.93rem;
-    padding: 0.38rem 0.8rem;
   }
-}
 
-/* Remove default white text from base styles, restore colors in overlay */
-.hero.hero28 h1, 
-.hero.hero28 h2, 
-.hero.hero28 h3, 
-.hero.hero28 h4, 
-.hero.hero28 h5, 
-.hero.hero28 h6, 
-.hero.hero28 p {
-  color: inherit;
-  max-width: unset;
-  margin-left: 0;
-  margin-right: 0;
+  .hero.hero28 > div > div:last-child .button-container .button {
+    font-size: 0.86rem;
+    padding: 0.39rem 0.86rem;
+  }
 }
