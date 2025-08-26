@@ -163,4 +163,12 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  // make nav-tools links buttons
+  const navTools = nav.querySelector('.nav-tools');
+  if (navTools) {
+    navTools.querySelectorAll('a').forEach((a) => {
+      a.classList.add('button');
+    });
+  }
 }

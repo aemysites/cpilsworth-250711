@@ -171,6 +171,10 @@ header nav .nav-sections ul {
   font-size: var(--body-font-size-s);
 }
 
+header nav .nav-tools li {
+  list-style-type: none;
+}
+
 header nav .nav-sections ul > li {
   font-weight: 500;
 }
