@@ -176,6 +176,35 @@ header nav .nav-tools li {
   list-style-type: none;
 }
 
+
+header nav .nav-global {
+  display: none;
+  background-color: var(--accent-color);
+  align-self: flex-start;
+  width: 100%;
+}
+
+header nav .nav-global ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-right: 50px;
+  margin-top: 0.5em;
+}
+
+header nav .nav-global ul li {
+  list-style: none;  
+}
+
+header nav .nav-global ul li a {
+  color: var(--background-color);
+  align-items: baseline;
+}
+
+header nav .nav-global ul li a:hover {
+  text-decoration: underline;
+}
+
 header nav .nav-sections ul > li {
   font-weight: 500;
 }
@@ -274,36 +303,13 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
     padding: 8px 0;
   }
+
+  header nav .nav-global {
+    display: block;
+  }
 }
 
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
-}
-
-header nav .nav-global {
-  background-color: var(--accent-color);
-  align-self: flex-start;
-  width: 100%;
-}
-
-header nav .nav-global ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-  margin-right: 50px;
-  margin-top: 0.5em;
-}
-
-header nav .nav-global ul li {
-  list-style: none;  
-}
-
-header nav .nav-global ul li a {
-  color: var(--background-color);
-  align-items: baseline;
-}
-
-header nav .nav-global ul li a:hover {
-  text-decoration: underline;
 }
