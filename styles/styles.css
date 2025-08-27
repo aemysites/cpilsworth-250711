@@ -343,7 +343,14 @@ main .section.light, main .section.highlight {
   background: rgb(0 0 0 / 0%) linear-gradient(150deg, rgb(225 22 60), rgb(161 20 83)) repeat scroll 0% 0% / auto padding-box border-box;
 }
 
-/** template specific styling **/
+/** homepage aemtemplate specific styling **/
 body.homepage h1 {
   display: none;
+}
+
+/** news template specific styling **/
+body.news main {
+  max-width: 100em;
+  margin-left: auto;
+  margin-right: auto;
 }
