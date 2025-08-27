@@ -152,6 +152,11 @@ header nav .nav-brand img {
   max-width: 158px;
 }
 
+header nav .nav-brand .icon-logo {
+  height: 58px;
+  width: auto;
+}
+
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
