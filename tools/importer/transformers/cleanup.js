@@ -49,6 +49,7 @@ export default function transform(hookName, element) {
       '#newWin',
       '.new-cookie-comp',
       '.breadCrumbsComp',
+      '.aria-offscreen',
     ]);
   }
 
