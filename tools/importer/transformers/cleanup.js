@@ -50,6 +50,8 @@ export default function transform(hookName, element) {
       '.new-cookie-comp',
       '.breadCrumbsComp',
       '.aria-offscreen',
+      '.aria-hidden',
+      '.sharedHeader',
     ]);
   }
 
