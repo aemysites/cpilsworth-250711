@@ -1,0 +1,22 @@
+name: "Move SharePoint Content to Backup Folder"
+description: "Move all files/folders (except 'tools' and 'block-collection') from a SharePoint folder to a backup folder."
+author: "Experience Catalyst"
+inputs:
+  token:
+    description: "The SP access token"
+    required: true
+  host:
+    description: "The host of SharePoint (i.e. adobe.sharepoint.com)"
+    required: true
+  site_path:
+    description: "The site path to the SharePoint site (i.e. /sites/AEMDemos)"
+    required: true
+  folder_path:
+    description: "The folder path to move files from (i.e. /Shared%20Documents/sites/my-site)"
+    required: true
+outputs:
+  backup_folder_name:
+    description: "The name of the backup folder created."
+runs:
+  using: 'node20'
+  main: 'sta-sp-move-to-backup.js' 

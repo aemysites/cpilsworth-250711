@@ -1,0 +1,20 @@
+{
+  "name": "sta-xwalk-operations-action",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "sta-xwalk-operations.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "keywords": ["STA", "Experience Catalyst", "Xwalk operations"],
+  "author": "Experience Catalyst",
+  "license": "ISC",
+  "description": "Operations specific to XWalk",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "unzipper": "^0.12.3",
+    "archiver": "^7.0.1"
+  }
+}

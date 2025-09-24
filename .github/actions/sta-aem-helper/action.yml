@@ -1,0 +1,25 @@
+name: "Get access token for AEM"
+description: "Get access token for AEM"
+author: "Experience Catalyst"
+inputs:
+  operation:
+    description: "The operation to perform."
+    required: true
+  credentials_path:
+    description: "The decoded credentials in a JSON string."
+  pages:
+    description: "The pages to preview or publish (/index.html, /a/file.xlsx)."
+  context:
+    description: "The AEMY context."
+outputs:
+  access_token:
+    description: "The access token for AEM"
+  successes:
+    description: "The number of successes."
+  failures:
+    description: "The number of failures."
+  error_message:
+    description: "Error message if the operation could not be completed"
+runs:
+  using: 'node20'
+  main: 'sta-aem-helper.js'

@@ -1,0 +1,16 @@
+{
+  "name": "sta-da-helper",
+  "version": "1.0.0",
+  "description": "GitHub Action with DA helper functions",
+  "main": "sta-da-helper.js",
+  "type": "module",
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  },
+  "keywords": [
+    "da",
+    "github-actions"
+  ],
+  "author": "Adobe",
+  "license": "Apache-2.0"
+}

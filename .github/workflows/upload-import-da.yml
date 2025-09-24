@@ -1,0 +1,225 @@
+name: STA-AEMY - Upload for DA
+
+description: |
+  Uploads the import zip file for DA. The import zip file is downloaded from a URL and extracted and uploaded for DA.
+  The action is triggered by a workflow dispatch event with inputs as follows.
+
+env:
+  DA_CLIENT_ID: ${{ secrets.DA_CLIENT_ID }}
+  DA_CLIENT_SECRET: ${{ secrets.DA_CLIENT_SECRET }}
+  DA_SERVICE_TOKEN: ${{ secrets.DA_SERVICE_TOKEN }}
+  AEMY_API_KEY: ${{ secrets.AEMY_API_KEY }}
+  IMS_TOKEN: ${{ secrets.IMS_TOKEN }}
+on:
+  workflow_dispatch:
+    inputs:
+      zip_url:
+        description: 'The URL of the zip file to download.'
+        required: true
+        type: password
+      aemy_callback_urls:
+        description: 'The AEMY status callback URLs.'
+        required: true
+      aemy_context:
+        description: 'The AEMY context as a string.'
+        required: true
+      root_mountpoint:
+        description: 'The target of the upload. This is the DA URL.'
+        required: true
+      skip_assets:
+        description: 'Whether or not the upload of assets should be skipped. Defaults to false.'
+        required: false
+        default: false
+      action_url:
+        description: 'The URL that shows state of the workflow as an aid for the user.'
+        required: false
+      preview:
+        description: 'Indicate whether the uploaded content should be previewed.'
+        required: false
+      previewAndPublish:
+        description: 'Indicate whether the uploaded content should be previewed and published.'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  read-and-upload-da-import-zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check inputs
+        shell: bash
+        run: |
+          echo NPM Version:
+          npm --version
+          
+          # Optional parameters
+          if [ -n "${{ github.event.inputs.action_url }}" ]; then
+            ACTION_URL="JS_LFJS_LF🕵 See the Action URL to check the progress/results of the workflow: ${{ github.event.inputs.action_url }}"
+            echo "ACTION_URL=$ACTION_URL" >> $GITHUB_ENV
+          fi
+          
+          # Ensure the secrets were set, and were set in the env variables properly.
+          if [ -z "${{ env.AEMY_API_KEY }}" ]; then
+            errorMessage="❌ The following secret is not set in your GitHub repo: JS_LF- AEMY_API_KEY JS_LF"
+            echo "errorMessage=$errorMessage" >> $GITHUB_ENV
+          fi
+          
+          if [ -z "${{ env.IMS_TOKEN }}" ]; then
+            echo "⚠️ IMS_TOKEN not set."
+          fi
+
+          if [ -z "${{ env.DA_CLIENT_ID }}" ] || [ -z "${{ env.DA_CLIENT_SECRET }}" ] || [ -z "${{ env.DA_SERVICE_TOKEN }}" ]; then
+            echo "⚠️ DA IMS client credentials are not set (DA_CLIENT_ID, DA_CLIENT_SECRET, DA_SERVICE_TOKEN)."
+          fi
+
+          total_steps=2
+          preview_operation=''
+
+          if ${{ github.event.inputs.preview == 'true' }}; then
+            total_steps=3
+            preview_operation='preview'
+          fi
+
+          if ${{ github.event.inputs.previewAndPublish == 'true' }}; then
+            total_steps=3
+            preview_operation='preview and publish'
+          fi
+
+          echo "total_steps=$total_steps" >> $GITHUB_ENV
+          echo "preview_operation=$preview_operation" >> $GITHUB_ENV
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: '[Setup]'
+        run: |
+          cd .github/actions/sta-status
+          npm install
+          cd ../sta-import-zip
+          npm install
+          cd ../sta-da-helper
+          npm install
+          cd ../sta-aem-helper
+          npm install
+          cd ..
+          npm install @adobe/aem-import-helper
+
+      - name: '[Check] Validation of inputs'
+        if: ${{ env.errorMessage != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ env.errorMessage }}
+          status_type: error
+          agent_name: upload-import-da
+
+      - name: '[Progress] Downloading and extracting zip file'
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Downloading and extracting content from zip... (Step 1 of ${{ env.total_steps }}) ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-da
+
+      - name: Downloading and extracting zip file
+        id: download-zip
+        uses: ./.github/actions/sta-import-zip
+        with:
+          download_url: ${{ github.event.inputs.zip_url }}
+
+      - name: '[Check] Downloading and extracting zip file'
+        if: ${{ steps.download-zip.outputs.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ steps.download-zip.outputs.error_message }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-da
+
+      - name: '[Progress] Uploading pages to DA'
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Zip extracted with ${{ steps.download-zip.outputs.file_count }} files. (Step 2 of ${{ env.total_steps }}).
+          status_type: progress
+          agent_name: upload-import-da
+
+      - name: Uploading pages to DA
+        id: da-upload-step
+        uses: ./.github/actions/sta-da-helper
+        with:
+            target: ${{ github.event.inputs.root_mountpoint }}
+            skip_assets: ${{ github.event.inputs.skip_assets }}
+            content_path: ${{ steps.download-zip.outputs.temp_dir }}/contents
+            operation: upload       
+
+      - name: '[Check] Uploading pages to DA'
+        if: ${{ steps.da-upload-step.outputs.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ steps.da-upload-step.outputs.error_message }} ${{ env.ACTION_URL }} 
+          status_type: error
+          agent_name: upload-import-da
+
+      - name: '[Progress] Preview and publish'
+        if: ${{ env.preview_operation != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Now performing ${{ env.preview_operation }} (Step 3 of ${{ env.total_steps }}) ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-da
+
+      - name: Preview and publish
+        id: preview-publish-content
+        if: ${{ env.preview_operation != '' }}
+        uses: ./.github/actions/sta-aem-helper
+        with:
+          context: ${{ github.event.inputs.aemy_context }}
+          pages: ${{ steps.da-upload-step.outputs.paths }}
+          operation: ${{ github.event.inputs.previewAndPublish == 'true' && 'previewAndPublish' || 'preview' }}
+
+      - name: '[Check] Preview and publish'
+        if: ${{ steps.preview-publish-content.outputs.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: The ${{ env.preview_operation }} had failures. ${{ steps.preview-publish-content.outputs.error_message }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-da
+
+      - name: '[Done] The success of the preview and publish operation' 
+        if: ${{ env.preview_operation != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ env.preview_operation }} executed successfully ${{ steps.preview-publish-content.outputs.successes }} times.
+          status_type: ok
+          agent_name: upload-import-da
+
+      - name: '[Done] Completed upload to DA' 
+        if: ${{ env.preview_operation == '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Upload to DA completed successfully.
+          status_type: ok
+          agent_name: upload-import-da
+
+      - name: Clean up temporary files
+        if: always()
+        run: |
+          # Delete the temp dir immediately, having system delete it eventually as a redundancy.
+          rm -rf "${{ steps.download-zip.outputs.temp_dir }}"

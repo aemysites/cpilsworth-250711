@@ -1,0 +1,184 @@
+name: STA - Backup and Reset
+
+on:
+  workflow_dispatch:
+    inputs:
+      backup_branch_name:
+        description: 'Name of the backup branch (optional)'
+        required: false
+        type: string
+      root_mountpoint:
+        description: 'Root mountpoint (required)'
+        required: true
+        type: string
+
+env:
+  AZURE_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
+  AZURE_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID }}
+  AZURE_PRIVATE_KEY_BASE64: ${{ secrets.AZURE_PRIVATE_KEY_BASE64 }}
+  AZURE_PFX_PASSWORD: ${{ secrets.AZURE_PFX_PASSWORD }}
+  AZURE_THUMBPRINT: ${{ secrets.AZURE_THUMBPRINT }}
+
+jobs:
+  backup-and-reset:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ensure WORKFLOW_PAT secret is set
+        run: |
+          if [ -z "${{ secrets.WORKFLOW_PAT }}" ]; then
+            echo "❌ The secret WORKFLOW_PAT is not set in your repository."
+            exit 1
+          fi
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+          token: ${{ secrets.WORKFLOW_PAT }}
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions@github.com'
+
+      - name: Set up dependencies
+        run: |
+          cd .github/actions/sta-mountpoint
+          npm install
+          cd ../sta-azure-helper
+          npm install
+          cd ../sta-sp-move-to-backup
+          npm install
+          cd ../sta-aem-helper
+          npm install
+
+      - name: Create Azure Access Token
+        uses: ./.github/actions/sta-azure-helper
+        id: azure-auth
+        with:
+          tenant_id: ${{ env.AZURE_TENANT_ID }}
+          client_id: ${{ env.AZURE_CLIENT_ID }}
+          key: ${{ env.AZURE_PRIVATE_KEY_BASE64 }}
+          password: ${{ env.AZURE_PFX_PASSWORD }}
+          thumbprint: ${{ env.AZURE_THUMBPRINT }}
+          duration: 3600
+
+      - name: Filter URLs for deletion
+        id: filter_urls
+        run: |
+          repo_name="${GITHUB_REPOSITORY#*/}"
+          repo_org="${GITHUB_REPOSITORY%%/*}"
+          base_url="https://main--${repo_name}--${repo_org}.aem.page"
+          urls=$(jq -r '.urls[] | select(.status != "EXCLUDED") | .url' tools/importer/site-urls.json | \
+            while read -r url; do
+              path=$(echo "$url" | sed -E 's|https?://[^/]+||')
+              # Skip empty or root path only
+              if [ -z "$path" ] || [ "$path" = "/" ]; then continue; fi
+              echo "$path"
+            done | paste -sd, -)
+          echo "Filtered URLs: $urls"
+          echo "urls=$urls" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+
+      - name: Convert URLs to paths array
+        id: convert_urls_to_paths
+        run: |
+          urls="${{ steps.filter_urls.outputs.urls }}"
+          # Split, trim, and join as JSON array
+          paths=$(echo "$urls" | awk -F, '{for(i=1;i<=NF;i++){gsub(/^ +| +$/,"",$i); printf "\"%s\"%s", $i, (i<NF?",":"")}}')
+          echo "paths=[$paths]" >> $GITHUB_OUTPUT
+
+      - name: Delete SharePoint previews and publish
+        id: delete-previews
+        uses: ./.github/actions/sta-aem-helper
+        with:
+          context: |
+            {"project": {"owner": "${{ github.repository_owner }}", "repo": "${{ github.event.repository.name }}", "branch": "main"}}
+          pages: ${{ steps.convert_urls_to_paths.outputs.paths }}
+          operation: deletePreviewAndPublish
+
+      - name: Parse mountpoint
+        id: mountpoint_data
+        uses: ./.github/actions/sta-mountpoint
+        with:
+          mountpoint: ${{ inputs.root_mountpoint }}
+          mountpoint_type: 'sharepoint'
+
+      - name: Move SharePoint content to backup folder
+        id: move-to-backup
+        uses: ./.github/actions/sta-sp-move-to-backup
+        with:
+          token: ${{ steps.azure-auth.outputs.access_token }}
+          host: ${{ fromJSON(steps.mountpoint_data.outputs.data).host }}
+          site_path: ${{ fromJSON(steps.mountpoint_data.outputs.data).site }}
+          folder_path: ${{ fromJSON(steps.mountpoint_data.outputs.data).path }}
+
+      - name: Create backup branch
+        id: backup
+        run: |
+          # Get current date and time in YYYY-MM-DD-HH-MM format
+          TIMESTAMP=$(date +%Y-%m-%d-%H-%M)
+          # Use provided branch name or default to backup-{timestamp}
+          BRANCH_NAME="${BACKUP_BRANCH_NAME:-backup-$TIMESTAMP}"
+          # Create and push the backup branch
+          git checkout -b $BRANCH_NAME
+          git push origin $BRANCH_NAME
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+        env:
+          BACKUP_BRANCH_NAME: ${{ inputs.backup_branch_name }}
+
+      - name: Determine reset commit
+        id: determine_reset_commit
+        run: |
+          # Find merge commit from aemysites/issue-1 by aem-aemy
+          target=$(git log origin/main --grep="from aemysites/issue-1$" --author="aem-aemy" -n 1 --pretty=format:%H || true)
+          
+          # Check if we found the commit
+          if [ -z "$target" ]; then
+            echo "⚠️ No commit found ending with 'from aemysites/issue-1'"
+            
+            # Check for fallback commit hash from repository variable
+            fallback_commit="${{ vars.FALLBACK_RESET_COMMIT }}"
+            if [ -n "$fallback_commit" ]; then
+              echo "🔄 Using fallback commit from repository variable: $fallback_commit"
+              
+              # Verify the fallback commit exists
+              if git cat-file -e "$fallback_commit" 2>/dev/null; then
+                target="$fallback_commit"
+                echo "✅ Fallback commit verified and will be used"
+              else
+                echo "❌ Fallback commit '$fallback_commit' does not exist in repository"
+                exit 1
+              fi
+            else
+              echo "❌ No fallback commit hash found in repository variable 'FALLBACK_RESET_COMMIT'"
+              echo "Please set the repository variable 'FALLBACK_RESET_COMMIT' with a valid commit hash"
+              exit 1
+            fi
+          fi
+          
+          echo "Reset target: $target"
+          echo "Commit message: $(git log -1 --pretty=%s "$target")"
+          echo "reset_commit_sha=$target" >> $GITHUB_OUTPUT
+
+      - name: Reset main to determined commit
+        run: |
+          git checkout main
+          git reset --hard ${{ steps.determine_reset_commit.outputs.reset_commit_sha }}
+          git push origin main --force
+
+      - name: Create AEMY Installation issue
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.WORKFLOW_PAT }}
+          script: |
+            const { data: issue } = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'AEMY Installation',
+              body: 'Setup the workflows',
+              labels: ['aemy-go', 'aemy-help', 'aemy-merge']
+            });
+            console.log(`Created issue #${issue.number}: ${issue.html_url}`);
