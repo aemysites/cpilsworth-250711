@@ -1,0 +1,320 @@
+name: STA-AEMY - Upload for XWalk
+
+description: |
+  Uploads the import zip file for XWalk. The import zip file is downloaded from a URL and extracted and uploaded for XWalk.
+  The action is triggered by a workflow dispatch event with inputs as follows.
+
+env:
+  # Coordinator callback api key (set for the sta-status action)
+  AEMY_API_KEY: ${{ secrets.AEMY_API_KEY }}
+on:
+  workflow_dispatch:
+    inputs:
+      # Zip URL is only valid for 60 minutes.
+      zip_url:
+        description: 'The URL of the zip file to download.'
+        required: true
+        type: password
+      aemy_callback_urls:
+        description: 'The AEMY status callback URLs.'
+        required: true
+      aemy_context:
+        description: 'The AEMY context as a string.'
+        required: true
+      root_mountpoint:
+        description: 'The AEM Author instance root URL for API operations (replication, etc.)'
+        required: true
+      skip_assets:
+        description: 'Whether or not the upload of assets should be skipped. Defaults to false.'
+        required: false
+        default: false
+      action_url:
+        description: 'The URL that shows state of the workflow as an aid for the user.'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  read-and-upload-xwalk-import-zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check inputs
+        shell: bash
+        run: |
+          echo NPM Version:
+          npm --version
+          
+          # Optional parameters
+          if [ -n "${{ github.event.inputs.action_url }}" ]; then
+            ACTION_URL="JS_LFJS_LF🕵 See the Action URL to check the progress/results of the workflow: ${{ github.event.inputs.action_url }}"
+            echo "ACTION_URL=$ACTION_URL" >> $GITHUB_ENV
+          fi
+          
+          # Required parameters
+          missing_vars=""
+          # Ensure the secret was set, and was set in the env variable properly.
+          if [ -z "${{ env.AEMY_API_KEY }}" ]; then
+            missing_vars+="JS_LF- AEMY_API_KEY "
+          fi
+          if [ -z "${{ secrets.AEM_SERVICE_CREDENTIALS }}" ]; then
+            missing_vars+="JS_LF- AEM_SERVICE_CREDENTIALS "
+          fi
+          if [ -n "$missing_vars" ]; then
+            errorMessage="❌ The following variables or secrets are not set in your GitHub repo: $missing_vars JS_LF"
+            echo "errorMessage=$errorMessage" >> $GITHUB_ENV
+          fi          
+          
+          echo "total_steps=8" >> $GITHUB_ENV
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up actions
+        run: |
+          cd .github/actions/sta-aem-helper
+          npm install
+          cd ../sta-status
+          npm install
+          cd ../sta-import-zip
+          npm install
+          cd ../sta-xwalk-operations
+          npm install
+          cd ../sta-aem-publish
+          npm install
+
+
+      - name: '[Check] Validate inputs'
+        if: ${{ env.errorMessage != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ env.errorMessage }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-xw
+
+      - name: '[Progress] Download and extract import zip'
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Inputs look good. Now downloading and extracting content from the Import zip... (Step 1 of ${{ env.total_steps }}). ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-xw
+
+      - name: Download and extract import zip
+        id: download-zip
+        uses: ./.github/actions/sta-import-zip
+        with:
+          download_url: ${{ github.event.inputs.zip_url }}
+
+      - name: '[Check] Download and extract import zip'
+        if: ${{ steps.download-zip.outputs.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ steps.download-zip.outputs.error_message }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-xw
+
+      - name: '[Progress] Check package type'
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Import zip extracted. Checking package type and converting if needed... (Step 2 of ${{ env.total_steps }}). ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-xw
+
+      - name: Detect and convert package
+        id: package-detection
+        uses: ./.github/actions/sta-xwalk-operations
+        with:
+          operation: convert-boilerplate
+          zip_contents_path: ${{ steps.download-zip.outputs.zip_contents_path }}
+          repo_name: ${{ github.event.repository.name }}
+
+      - name: '[Check] Package type detection'
+        if: ${{ steps.package-detection.outputs.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ steps.package-detection.outputs.error_message }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-xw
+
+      - name: '[Progress] Extract AEM contents'
+        if: ${{ steps.package-detection.outputs.is_boilerplate != 'true' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Import zip extracted. Now extracting AEM content... (Step 3 of ${{ env.total_steps }}). ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-xw
+
+      - name: Extract AEM contents
+        if: ${{ steps.package-detection.outputs.is_boilerplate != 'true' }}
+        id: aem-content-paths
+        uses: ./.github/actions/sta-xwalk-operations
+        with:
+          operation: get-page-paths
+          zip_contents_path: ${{ steps.download-zip.outputs.zip_contents_path }}
+
+      - name: '[Check] Extract AEM contents'
+        if: ${{ steps.package-detection.outputs.is_boilerplate != 'true' && steps.aem-content-paths.outputs.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ steps.aem-content-paths.outputs.error_message }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-xw
+
+
+
+      - name: '[Progress] Get access token for AEM'
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Found AEM content package. Now getting access token... (Step 4 of ${{ env.total_steps }}). ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-xw
+
+      - name: Write service credentials to file
+        run: |
+          echo "${{ secrets.AEM_SERVICE_CREDENTIALS }}" | base64 --decode > service-credentials.json
+
+      - name: Get access token for AEM
+        id: get-access-token-for-aem
+        uses: ./.github/actions/sta-aem-helper
+        with:
+          operation: fetch-access-token
+          credentials_path: ./service-credentials.json
+
+      - name: '[Check] Get access token for AEM'
+        if: ${{ steps.get-access-token-for-aem.outputs.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ steps.get-access-token-for-aem.outputs.error_message }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-xw
+
+      - name: '[Progress] Upload content to XWalk'
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Content package ready. Now initiating upload${{ steps.package-detection.outputs.is_boilerplate == 'true' && ' (boilerplate with assets skipped)' || '' }}... (Step 5 of ${{ env.total_steps }}). ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-xw
+
+      - name: Upload content to XWalk
+        id: xwalk-upload-step
+        uses: ./.github/actions/sta-xwalk-operations
+        with:
+          operation: upload
+          access_token: ${{ steps.get-access-token-for-aem.outputs.access_token }}
+          aem_author_url: ${{ github.event.inputs.root_mountpoint }}
+          skip_assets: ${{ steps.package-detection.outputs.is_boilerplate == 'true' || github.event.inputs.skip_assets == 'true' }}
+          zip_contents_path: ${{ steps.download-zip.outputs.zip_contents_path }}
+          content_package_path: ${{ steps.package-detection.outputs.converted_package_path || steps.package-detection.outputs.content_package_path || steps.aem-content-paths.outputs.content_package_path }}
+
+      - name: '[Check] Upload content to XWalk'
+        if: ${{ steps.xwalk-upload-step.outputs.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ steps.xwalk-upload-step.outputs.error_message }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-xw
+
+      - name: '[Progress] Replicate content to AEM Preview'
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: XWalk upload succeeded. Now replicating content to AEM Preview... (Step 6 of ${{ env.total_steps }}). ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-xw
+
+      - name: Replicate content to AEM Preview
+        id: replicate-preview-step
+        uses: ./.github/actions/sta-aem-publish
+        with:
+          access_token: ${{ steps.get-access-token-for-aem.outputs.access_token }}
+          aem_url: ${{ github.event.inputs.root_mountpoint }}
+          page_paths: ${{ steps.package-detection.outputs.converted_page_paths || steps.package-detection.outputs.page_paths || steps.aem-content-paths.outputs.page_paths }}
+          is_preview: 'true'
+
+      - name: '[Check] Replicate content to AEM Preview'
+        continue-on-error: true
+        if: ${{ steps.replicate-preview-step.outputs.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ steps.replicate-preview-step.outputs.error_message }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-xw
+
+      - name: '[Progress] Replicate content to AEM Publish'
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Preview step completed (with or without errors). Now replicating content to AEM Publish... (Step 7 of ${{ env.total_steps }}). ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-xw
+
+      - name: Replicate content to AEM Publish
+        id: replicate-publish-step
+        uses: ./.github/actions/sta-aem-publish
+        with:
+          access_token: ${{ steps.get-access-token-for-aem.outputs.access_token }}
+          aem_url: ${{ github.event.inputs.root_mountpoint }}
+          page_paths: ${{ steps.package-detection.outputs.converted_page_paths || steps.package-detection.outputs.page_paths || steps.aem-content-paths.outputs.page_paths }}
+          is_preview: 'false'
+
+      - name: '[Check] Replicate content to AEM Publish'
+        if: ${{ steps.replicate-publish-step.outputs.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: ${{ steps.replicate-publish-step.outputs.error_message }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-xw
+
+      - name: '[Progress] Clean up'
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Content replicated to publish successfully. Now cleaning up temporary files... (Step 8 of ${{ env.total_steps }}). ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-xw
+
+      - name: Clean up
+        if: always()
+        run: |
+          # Delete the temp dir immediately, having system delete it eventually as a redundancy.
+          rm -rf "${{ steps.download-zip.outputs.temp_dir }}"
+          rm -f service-credentials.json
+
+      - name: '[Done] Workflow is complete'
+        uses: ./.github/actions/sta-status
+        with:
+          callback_urls: ${{ github.event.inputs.aemy_callback_urls }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Upload and replication workflow completed successfully!
+          status_type: ok
+          agent_name: upload-import-xw

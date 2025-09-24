@@ -1,0 +1,39 @@
+name: "XWalk Operations"
+description: "Perform XWalk operations"
+author: "Experience Catalyst"
+inputs:
+  operation:
+    description: "The XWalk specific operation to perform."
+    required: true
+  zip_contents_path:
+    description: "The path to the contents of the Import zip."
+    required: true
+  access_token:
+    description: "The base64-encoded token to use for the upload."
+  aem_author_url:
+    description: "The target of the upload. This is the Adobe AEM Cloud URL."
+  content_package_path:
+    description: "The path to the AEM content package in for Upload."
+  skip_assets:
+    description: "The agent name to help identify things in logs."
+    default: 'false'
+  repo_name:
+    description: "Repository name to use for boilerplate path replacement (required for convert-boilerplate operation)"
+    required: false
+outputs:
+  error_message:
+    description: "Error message if the operation could not be completed"
+  content_package_path:
+    description: "The path to the content package zip file."
+  page_paths:
+    description: "The list of page paths to replicate as a comma-delimited string."
+  is_boilerplate:
+    description: "Whether the package is a boilerplate (for detect-boilerplate and convert-boilerplate operations)"
+  converted_package_path:
+    description: "Path to the converted content package (for convert-boilerplate operation)"
+  converted_page_paths:
+    description: "JSON string of converted page paths (for convert-boilerplate operation)"
+
+runs:
+  using: 'node20'
+  main: 'sta-xwalk-operations.js'

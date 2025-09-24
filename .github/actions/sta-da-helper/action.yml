@@ -1,0 +1,26 @@
+name: "Upload DA"
+description: "Upload the content to DA using IMS token exchange for authentication"
+author: "Experience Catalyst"
+inputs:
+  target:
+    description: "The target of the upload. This is the DA URL (see mountpoint)."
+    required: true
+  content_path:
+    description: "The path to the folder containing the da files."
+    required: true
+  skip_assets:
+    description: "Whether to skip assets"
+    required: false
+    default: 'false'
+  operation:
+    description: "The operation to perform"
+    required: false
+    default: 'upload'
+outputs:
+  paths:
+    description: "The list of paths that were uploaded"
+  error_message:
+    description: "Error message if the operation failed"
+runs:
+  using: 'node20'
+  main: 'sta-da-helper.js'
